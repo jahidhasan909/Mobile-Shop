@@ -1,8 +1,10 @@
+import HeroBanner from "@/Components/HeroBanner/HeroBanner";
+
 
 const HomePage = () => {
     return (
-        <div>
-            <h1>home</h1>
+        <div className="container mx-auto">
+           <HeroBanner></HeroBanner>
         </div>
     );
 };
