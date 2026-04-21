@@ -3,13 +3,13 @@ import ImageSlider from "../ImageSilder/ImageSilder";
 
 const HeroBanner = () => {
     return (
-        <div className="grid grid-cols-2 my-7 gap-3">
+        <div className="flex items-center justify-center py-7 gap-3">
             <div className="">
                 <ImageSlider></ImageSlider>
             </div>
-            <div className="h-[600px] space-y-2">
-                <img className="h-[300px] w-full rounded" src="https://i.ibb.co.com/21wPp5v0/windows.webp" alt="" />
-                <img className="h-[300px] w-full rounded" src="https://i.ibb.co.com/FbW8d4BD/website.jpg" alt="" />
+            <div className="h-[590px] space-y-3">
+                <img className="h-[292px] w-[450px]  rounded" src="https://i.ibb.co.com/21wPp5v0/windows.webp" alt="" />
+                <img className="h-[292px] w-[450px] rounded" src="https://i.ibb.co.com/FbW8d4BD/website.jpg" alt="" />
             </div>
         </div>
     );
