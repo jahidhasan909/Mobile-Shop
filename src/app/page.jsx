@@ -2,6 +2,7 @@ import ShopByCategory from "@/Components/Category/ShopByCategory";
 import HeroBanner from "@/Components/HeroBanner/HeroBanner";
 import Manuvar from "@/Components/ManuVar/Manuvar";
 import MiniBanner from "@/Components/MiniBanner/MiniBanner";
+import Tranddingproduct from "@/Components/TopProduct/Tranddingproduct";
 
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
 
             <MiniBanner></MiniBanner>
             <ShopByCategory></ShopByCategory>
+            <Tranddingproduct></Tranddingproduct>
         </div>
     );
 };
