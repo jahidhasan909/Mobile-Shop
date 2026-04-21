@@ -28,11 +28,11 @@ export default function RootLayout({ children }) {
     >
       <body className="min-h-full flex flex-col">
         <ProvidersTheme>
-        <Navbar></Navbar>
-          <main className="grow">
+          <Navbar></Navbar>
+          <main className="grow bg-neutral-100">
             {children}
           </main>
-        <Footer></Footer>
+          <Footer></Footer>
         </ProvidersTheme>
       </body>
     </html>
