@@ -39,7 +39,7 @@ const Tranddingproduct = () => {
                             <img src="https://i.ibb.co.com/50k5rcD/Pixel-10-Pro-XLgds-7678-removebg-preview.png" alt="" />
                         </Card.Content>
                         <Card.Header>
-                            <Card.Title className="text-center">Tablet</Card.Title>
+                            <Card.Title className="text-center">Pixel 10 Pro</Card.Title>
                             <Card.Footer className="text-center font-semibold mx-auto">
                                 ৳98,000
                             </Card.Footer>
@@ -73,8 +73,8 @@ const Tranddingproduct = () => {
                     </div>
                     <img className="h-[400px]" src="https://i.ibb.co.com/20FqdTWK/Apple-i-Phone-17-Pro-Max-Design-PNG-thumb-removebg-preview.png" alt="" />
                     <p className="text-[1.10rem] mt-7">iPhone 17 Pro Max</p>
-                    <h1 className="font-bold text-xl mt-2">৳1,69,990</h1>
-                    <Button className='w-full rounded-sm bg-black text-white mt-10'>Add to Cart !</Button>
+                    <h1 className="font-bold text-xl mt-4">৳1,69,990</h1>
+                    <Button className='w-[290px] rounded-sm bg-black text-white mt-5'>Add to Cart !</Button>
                 </div>
 
 
