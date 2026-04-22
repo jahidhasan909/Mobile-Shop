@@ -20,11 +20,15 @@ const Manuvar = () => {
 
                 <div className='relative group'>
                     <button className="flex items-center gap-1"> <Smartphone></Smartphone> PHONES</button>
-                    <div className='absolute hidden top-full group-hover:block bg-white left-0 z-50'>
-                        <ul className='flex flex-col'>
+                    <div className='absolute rounded-md shadow-md hidden top-full group-hover:block bg-white left-0 z-50'>
+                        <ul className='flex flex-col p-5 space-y-2'>
                             <li>Iphone</li>
-                            <li>Redmi</li>
+                            <li>Samsung</li>
                             <li>Google pixel</li>
+                            <li>Huawei</li>
+                            <li>Motorola</li>
+                            <li>Nothing</li>
+                            <li>Redmi</li>
                         </ul>
                     </div>
                 </div>
@@ -34,11 +38,10 @@ const Manuvar = () => {
 
                 <div className=' relative group'>
                     <button className="flex items-center gap-1"> <FaTabletAlt /> TABLET</button>
-                    <div className='absolute hidden top-full group-hover:block bg-white left-0 z-50'>
-                        <ul className='flex flex-col'>
+                    <div className='absolute hidden rounded-md shadow-md top-full group-hover:block bg-white left-0 z-50'>
+                        <ul className='flex flex-col p-5 space-y-2'>
                             <li>Iphone</li>
-                            <li>Redmi</li>
-                            <li>Google pixel</li>
+                            <li>Samsung</li>
                         </ul>
                     </div>
                 </div>
@@ -47,11 +50,12 @@ const Manuvar = () => {
 
                 <div className=' relative group'>
                     <button className="flex items-center gap-1"><IoIosLaptop /> LAPTOP</button>
-                    <div className='absolute hidden top-full group-hover:block bg-white left-0 z-50'>
-                        <ul className='flex flex-col'>
-                            <li>Iphone</li>
-                            <li>Redmi</li>
-                            <li>Google pixel</li>
+                    <div className='absolute hidden rounded-md shadow-md top-full group-hover:block bg-white left-0 z-50'>
+                        <ul className='flex flex-col p-5 space-y-2'>
+                            <li>Apple</li>
+                            <li>Huawei</li>
+                            <li>Hp</li>
+                            <li>Asus</li>
                         </ul>
                     </div>
                 </div>
@@ -61,22 +65,21 @@ const Manuvar = () => {
                 <div className=' relative group'>
                     <button className="flex items-center gap-1"> <IoWatchOutline />
                         WATCH</button>
-                    <div className='absolute hidden top-full group-hover:block bg-white left-0 z-50'>
-                        <ul className='flex flex-col'>
-                            <li>Iphone</li>
-                            <li>Redmi</li>
-                            <li>Google pixel</li>
+                    <div className='absolute hidden rounded-md shadow-md top-full group-hover:block bg-white left-0 z-50'>
+                        <ul className='flex flex-col p-5 space-y-2'>
+                            <li>Apple</li>
+                            <li>Samsung</li>
                         </ul>
                     </div>
                 </div>
 
                 <div className=' relative group'>
                     <button className="flex items-center gap-1"> <LogoAcrobat></LogoAcrobat> GADGET</button>
-                    <div className='absolute hidden top-full group-hover:block bg-white left-0 z-50'>
-                        <ul className='flex flex-col'>
-                            <li>Iphone</li>
-                            <li>Redmi</li>
-                            <li>Google pixel</li>
+                    <div className='absolute hidden rounded-md shadow-md top-full group-hover:block bg-white left-0 z-50'>
+                        <ul className='flex flex-col p-5 space-y-2'>
+                            <li>Airpods</li>
+                            <li>keyboard</li>
+                            <li>Mouse</li>
                         </ul>
                     </div>
                 </div>
@@ -85,12 +88,11 @@ const Manuvar = () => {
 
                 <div className=' relative group'>
                     <button className="flex items-center gap-1">
-                        <FaTv /> SMART TV</button>
-                    <div className='absolute hidden top-full group-hover:block bg-white left-0 z-50'>
-                        <ul className='flex flex-col'>
-                            <li>Iphone</li>
-                            <li>Redmi</li>
-                            <li>Google pixel</li>
+                        <FaTv /> SMARTTV</button>
+                    <div className='absolute hidden rounded-md shadow-md top-full group-hover:block bg-white left-0 z-50'>
+                        <ul className='flex flex-col p-5 space-y-2'>
+                            <li>walton</li>
+                            <li>Sony</li>
                         </ul>
                     </div>
                 </div>

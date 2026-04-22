@@ -18,13 +18,13 @@ export const DropdownManu = () => {
                         <Dropdown.Item id="new-file" textValue="New file">
 
                             <div className="flex flex-col">
-                                <Label>New file</Label>
+                                <Label>AllPhone</Label>
                             </div>
                         </Dropdown.Item>
                         <Dropdown.Item id="edit-file" textValue="Edit file">
 
                             <div className="flex flex-col">
-                                <Label>Edit file</Label>
+                                <Label>AllLaptop</Label>
                             </div>
                         </Dropdown.Item>
                     </Dropdown.Section>

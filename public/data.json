@@ -1,0 +1,594 @@
+{
+    "phone": {
+        "iphone": [
+            {
+                "id": 1,
+                "model": "iPhone 17 Pro Max",
+                "price": "৳175,000",
+                "img": "https://i.ibb.co.com/20FqdTWK/Apple-i-Phone-17-Pro-Max-Design-PNG-thumb-removebg-preview.png"
+            },
+            {
+                "id": 2,
+                "model": "iPhone 17 Pro",
+                "price": "৳ 160,000",
+                "img": "https://i.ibb.co.com/nN67m65b/i-Phone-17-Pro-Max-Deep-Blue-4223.jpg"
+            },
+            {
+                "id": 3,
+                "model": "iPhone 17",
+                "img": "https://i.ibb.co.com/wNMRfgxf/iphone-17-sage445.jpg",
+                "price": "৳ 115,000"
+            },
+            {
+                "id": 4,
+                "model": "iPhone 16 Pro Max",
+                "img": "https://i.ibb.co.com/SwmhxLwk/i-Phone-16-Pro-Max-3128.png",
+                "price": "৳ 155,000"
+            },
+            {
+                "id": 5,
+                "model": "iPhone 16 Pro",
+                "img": "https://i.ibb.co.com/7xY7MDjz/iphone-16-pro-max-256gb-black-titanium.jpg",
+                "price": "৳ 140,000"
+            },
+            {
+                "id": 6,
+                "model": "iPhone 16",
+                "img": "https://i.ibb.co.com/DcJKypF/i-Phone-16-128-GB-White-910x1155.jpg",
+                "price": "৳ 95,000"
+            },
+            {
+                "id": 7,
+                "model": "iPhone 15 Pro Max",
+                "img": "https://i.ibb.co.com/QFJTYwBh/i-Phone-15-Plus-2-6-5363.jpg",
+                "price": "৳ 135,000"
+            },
+            {
+                "id": 8,
+                "model": "iPhone 15",
+                "img": "https://i.ibb.co.com/zW8GZcR4/images.jpg",
+                "price": "৳ 82,000"
+            }
+        ],
+        "samsung": [
+            {
+                "id": 1,
+                "model": "Samsung Galaxy S26 Ultra",
+                "img": "https://i.ibb.co.com/Y7dbXW6y/Galaxy-S26-Ultra-black-4396-removebg-preview.png",
+                "price": "৳199,999",
+                "specs": "12GB RAM, 256GB Storage, 200MP Camera"
+            },
+            {
+                "id": 2,
+                "model": "Samsung Galaxy S26",
+                "img": "https://i.ibb.co.com/XrgX0xc9/Samsung-Galaxy-S26si-8791.webp",
+                "price": "৳119,999",
+                "specs": "12GB RAM, 256GB Storage, Snapdragon 8 Elite Gen 5"
+            },
+            {
+                "id": 3,
+                "model": "Samsung Galaxy A57 5G",
+                "img": "https://i.ibb.co.com/BHnmM5DT/Galaxy-A57-5-Gaa-9489.webp",
+                "price": "৳58,000",
+                "specs": "8GB RAM, 128GB Storage, 5000mAh Battery"
+            },
+            {
+                "id": 4,
+                "model": "Samsung Galaxy A37 5G",
+                "img": "https://i.ibb.co.com/fY5MXZPb/Galaxy-A37-5-Gaa-9253.webp",
+                "price": "৳46,000",
+                "specs": "6GB RAM, 128GB Storage, Super AMOLED Display"
+            },
+            {
+                "id": 5,
+                "model": "Samsung Galaxy A17 5G",
+                "img": "https://i.ibb.co.com/JRw3CsfT/Galaxy-A17-5-G-Blue-5700.webp",
+                "price": "৳27,999",
+                "specs": "6GB RAM, 128GB Storage, Exynos 1330"
+            }
+        ],
+        "pixel": [
+            {
+                "id": 1,
+                "model": "Google Pixel 10 Pro XL",
+                "img": "https://i.ibb.co.com/4R7nwm4Z/Pixel-10-Pro-XLgd-1497.webp",
+                "price": "৳ 154,999",
+                "specs": "16GB RAM, 256GB Storage, Tensor G5, 6.8\" LTPO OLED"
+            },
+            {
+                "id": 2,
+                "model": "Google Pixel 10 Pro",
+                "img": "https://i.ibb.co.com/50k5rcD/Pixel-10-Pro-XLgds-7678-removebg-preview.png",
+                "price": "৳ 139,999",
+                "specs": "16GB RAM, 128GB Storage, 200MP Main Camera, Tensor G5"
+            },
+            {
+                "id": 3,
+                "model": "Google Pixel 10",
+                "img": "https://i.ibb.co.com/1Y8FJyZR/Pixel-10-Indigo-8906.webp",
+                "price": "৳ 109,999",
+                "specs": "12GB RAM, 128GB Storage, Tensor G5, AI Advanced Features"
+            },
+            {
+                "id": 4,
+                "model": "Google Pixel 9a",
+                "img": "https://i.ibb.co.com/fdqsJ1Pv/Pixel-9asd-8078.webp",
+                "price": "৳ 69,999",
+                "specs": "8GB RAM, 128GB Storage, Tensor G4, 6.3\" Display"
+            }
+        ],
+        "huawei": [
+            {
+                "id": 1,
+                "model": "Huawei Mate XT Ultimate",
+                "img": "https://i.ibb.co.com/hJFwkQ9P/Huawei-Mate-XT-Ultimatea-7559.webp",
+                "price": "৳555,000",
+                "specs": ""
+            },
+            {
+                "id": 2,
+                "model": "Huawei Mate 70 Pro",
+                "img": "https://i.ibb.co.com/JwjnmRx8/Huawei-Pura-70-Pro-5-G-Price-in-Bangladesh-White.webp",
+                "price": "৳ 124,500",
+                "specs": "12GB RAM, 256GB Storage, Kirin 9100 Chipset, Satellite Calling"
+            }
+        ],
+        "motorola": [
+            {
+                "id": 1,
+                "model": "Motorola Edge 60 Pro 5G",
+                "img": "https://i.ibb.co.com/y95MCS9/Motorola-Edge-60-Fusion-5-Gaa-9783.webp",
+                "price": "৳ 41,000",
+                "specs": "12GB RAM, 256GB Storage, Dimensity 8350 Extreme, 6000mAh Battery"
+            },
+            {
+                "id": 2,
+                "model": "Motorola Edge 50 5G",
+                "img": "https://i.ibb.co.com/prQ6xMZH/JCs769lmk-Sf-NQmt-Lp-JArmdfth-UYv2-WHgdhre-N2j8-removebg-preview.png",
+                "price": "৳ 26,500",
+                "specs": "8GB RAM, 256GB Storage, Dimensity 7300, 50MP Triple Camera"
+            },
+            {
+                "id": 3,
+                "model": "Motorola Razr Gen 4 (2026)",
+                "img": "https://i.ibb.co.com/tPL5vFJb/razr-50-NA-e-Comm-render-6-color-3-case-8y39txiu1725070882148.avif",
+                "price": "৳ 95,000",
+                "specs": "12GB RAM, 512GB Storage, Foldable P-OLED, Snapdragon 8 Gen 3"
+            }
+        ],
+        "redmi": [
+            {
+                "id": 1,
+                "model": "Xiaomi Redmi Note 15 t Pro 5G",
+                "img": "https://i.ibb.co.com/nNLCkW1y/xiaomi-15t-pro-mocha-gold-official-image-removebg-preview.png",
+                "price": "৳ 82,999",
+                "specs": "12GB RAM, 512GB Storage, 200MP Camera, 120W Fast Charging"
+            },
+            {
+                "id": 2,
+                "model": "Xiaomi Redmi Note 15 5G",
+                "img": "https://i.ibb.co.com/BHzXDwP8/Redmi-Note-15-5-G-3331.webp",
+                "price": "৳ 29,999",
+                "specs": "8GB RAM, 256GB Storage, 108MP Camera, 6000mAh Battery"
+            }
+        ],
+        "nothing": [
+            {
+                "id": 1,
+                "model": "Nothing Phone (3)",
+                "img": "https://i.ibb.co.com/ym2Fp0xN/nothing-phone-3-white-official-image-1-removebg-preview.png",
+                "price": "৳ 74,990",
+                "specs": "12GB RAM, 256GB Storage, Snapdragon 8s Gen 4, Glyph Matrix LED"
+            },
+            {
+                "id": 2,
+                "model": "Nothing Phone (3a) Pro",
+                "img": "https://i.ibb.co.com/0yRb73vh/Nothing-Phone-3a-5-G-gary-2408.webp",
+                "price": "৳ 39,990",
+                "specs": "12GB RAM, 256GB Storage, Dimensity 7350 Pro, 50MP Dual Camera"
+            },
+            {
+                "id": 3,
+                "model": "Nothing Phone (2a) Plus",
+                "img": "https://i.ibb.co.com/VY9Pqmdb/Nothing-Phone-2a-Plus-5-G-price-in-Bangladesh-gray.webp",
+                "price": "৳ 31,490",
+                "specs": "8GB RAM, 256GB Storage, 50MP Selfie Camera, 50W Fast Charging"
+            }
+        ]
+    },
+    "tablet": {
+        "iphoneTab": [
+            {
+                "id": 1,
+                "model": "iPad Pro M5 (11-inch, 2026)",
+                "img": "https://i.ibb.co.com/TXVkqLN/Apple-i-Pad-Pro-M5-13-inch-price-in-Bangladesh-MC-Solution-BD-removebg-preview.png",
+                "price": "৳ 122,400",
+                "specs": "Apple M5 Chip, Tandem OLED Display, 12GB RAM, 256GB Storage"
+            },
+            {
+                "id": 2,
+                "model": "iPad Air M4 (11-inch, 2026)",
+                "img": "https://i.ibb.co.com/qLQMtNRG/i-Pad-Air-M3-2025a-2380.webp",
+                "price": "৳ 78,500",
+                "specs": "Apple M4 Chip, Liquid Retina Display, 12GB RAM, 128GB Storage"
+            },
+            {
+                "id": 3,
+                "model": "iPad Mini 7 (A17 Pro)",
+                "img": "https://i.ibb.co.com/0R5zgBL7/i-Pad-mini-2024-Purple-4336-jpg-7292.webp",
+                "price": "৳ 58,990",
+                "specs": "A17 Pro Chip, 8.3-inch Display, 8GB RAM, 128GB Storage"
+            }
+        ],
+        "samsungTab": [
+            {
+                "id": 1,
+                "model": "Galaxy Tab S9",
+                "img": "https://i.ibb.co.com/HDf4Qydw/Galaxy-Tab-S9-Silver-2921.webp"
+            }
+        ]
+    },
+    "laptop": {
+        "apple": [
+            {
+                "id": 1,
+                "model": "MacBook Air M1",
+                "year": 2020,
+                "chip": "Apple M1",
+                "ram": "8GB",
+                "storage": "256GB SSD",
+                "display": "13.3 inch Retina",
+                "price": "৳80,500",
+                "img": "https://i.ibb.co.com/3mZy9smZ/Mac-Book-Air-13-6-2022-M2-Silver-1.webp"
+            },
+            {
+                "id": 2,
+                "model": "MacBook Air M2",
+                "year": 2022,
+                "chip": "Apple M2",
+                "ram": "8GB",
+                "storage": "256GB SSD",
+                "display": "13.6 inch Liquid Retina",
+                "price": "৳102,000",
+                "img": "https://i.ibb.co.com/0jj57gCF/Mac-Book-Air-15-2023-M2-Midnight.webp"
+            },
+            {
+                "id": 3,
+                "model": "MacBook Air M3",
+                "year": 2024,
+                "chip": "Apple M3",
+                "ram": "8GB",
+                "storage": "256GB SSD",
+                "display": "13.6 inch Liquid Retina",
+                "price": "৳139,000",
+                "img": "https://i.ibb.co.com/8ndqfFzY/Mac-Book-Air-M1-13-inch-8256-GB-8-Core-CPU-7-Core-GPUa-4352.webp"
+            },
+            {
+                "id": 4,
+                "model": "MacBook Air 15 M2",
+                "year": 2023,
+                "chip": "Apple M2",
+                "ram": "8GB",
+                "storage": "256GB SSD",
+                "display": "15.3 inch Liquid Retina",
+                "price": "৳144,999",
+                "img": "https://i.ibb.co.com/CDTTk8t/Mac-Book-Air-M277-1654.webp"
+            },
+            {
+                "id": 5,
+                "model": "MacBook Air 15 M3",
+                "year": 2024,
+                "chip": "Apple M3",
+                "ram": "8GB",
+                "storage": "256GB SSD",
+                "display": "15.3 inch Liquid Retina",
+                "price": "৳142,999",
+                "img": "https://i.ibb.co.com/CDTTk8t/Mac-Book-Air-M277-1654.webp"
+            },
+            {
+                "id": 6,
+                "model": "MacBook Pro 13 M2",
+                "year": 2022,
+                "chip": "Apple M2",
+                "ram": "8GB",
+                "storage": "256GB SSD",
+                "display": "13.3 inch Retina",
+                "price": "৳143,900",
+                "img": "https://i.ibb.co.com/fz43J0nN/Mac-Book-Pro-M2-8-core-CPU-10-core-GPU-MC-Solution-BD.webp"
+            },
+            {
+                "id": 7,
+                "model": "MacBook Pro 14 M3",
+                "year": 2023,
+                "chip": "Apple M3",
+                "ram": "8GB",
+                "storage": "512GB SSD",
+                "display": "14.2 inch Liquid Retina XDR",
+                "price": "৳181,900",
+                "img": "https://i.ibb.co.com/7JRMncgs/Mac-Book-Pro-M3-14inch-Space-Gray-8357.webp"
+            },
+            {
+                "id": 8,
+                "model": "MacBook Pro 14 M3 Pro",
+                "year": 2023,
+                "chip": "Apple M3 Pro",
+                "ram": "18GB",
+                "storage": "512GB SSD",
+                "display": "14.2 inch Liquid Retina XDR",
+                "price": "৳258000",
+                "img": "https://i.ibb.co.com/7JRMncgs/Mac-Book-Pro-M3-14inch-Space-Gray-8357.webp"
+            },
+            {
+                "id": 9,
+                "model": "MacBook Pro 16 M3 Pro",
+                "year": 2023,
+                "chip": "Apple M3 Pro",
+                "ram": "18GB",
+                "storage": "512GB SSD",
+                "display": "16.2 inch Liquid Retina XDR",
+                "price_usd": "৳383,500",
+                "img": "https://i.ibb.co.com/8ndqfFzY/Mac-Book-Air-M1-13-inch-8256-GB-8-Core-CPU-7-Core-GPUa-4352.webp"
+            },
+            {
+                "id": 10,
+                "model": "MacBook Pro 16 M5 Max",
+                "year": 2023,
+                "chip": "Apple M3 Max",
+                "ram": "36GB",
+                "storage": "1TB SSD",
+                "display": "16.2 inch Liquid Retina XDR",
+                "price_usd": "৳390,500",
+                "img": "https://i.ibb.co.com/gXmxG8L/Mac-Book-Pro-14-inch-M5-254f8453-0647-4bb9-8012-f7b2f788e670-removebg-preview.png"
+            }
+        ],
+        "huawei": [
+            {
+                "id": 1,
+                "name": "Huawei MateBook D15",
+                "price": "60,000৳",
+                "img": "https://i.ibb.co.com/5gYkrsF7/Huawei-Mate-Book-D15-Mystic-Silver-a-4425.webp"
+            },
+            {
+                "id": 2,
+                "name": "Huawei MateBook D14",
+                "price": "74,800৳",
+                "img": "https://i.ibb.co.com/pBgxjzv5/Huawei-Mate-Book-D14-Space-Gray-a-3625.webp"
+            },
+            {
+                "id": 3,
+                "name": "Huawei MateBook D16",
+                "price": "98,400৳",
+                "img": "https://i.ibb.co.com/39Xvxbp5/matebook-d-16-01-500x500.webp"
+            }
+        ],
+        "hp": [
+            {
+                "id": 1,
+                "name": "HP 15s-fq5786TU",
+                "price": "65,800৳",
+                "img": "https://i.ibb.co.com/LDwRM2kk/HP-15-S-FQ5786-TU-a-3664.webp"
+            },
+            {
+                "id": 2,
+                "name": "HP Pavilion 15-eg3148ni",
+                "price": "78,999৳",
+                "img": "https://i.ibb.co.com/TBsrmHZx/images.jpg"
+            },
+            {
+                "id": 3,
+                "name": "HP Victus Gaming 15-fb3166AX",
+                "price": "100,000৳",
+                "img": "https://i.ibb.co.com/FbnT5HhC/HP-Victus-15-Blue-b-9868.webp"
+            },
+            {
+                "id": 4,
+                "name": "HP Spectre x360 (Core Ultra 7)",
+                "price": "2,29,899৳",
+                "img": "https://i.ibb.co.com/ksKfKr5y/HP-Spectre-x360-14-inch-2-in-1-Laptop-2024-14th-Gen-Laptop-price-in-Bangladesh-MC-Solution-BD-1.webp"
+            }
+        ],
+        "asus": [
+            {
+                "id": 1,
+                "name": "ASUS Vivobook Go 15 (E1504F)",
+                "price": "59,500৳",
+                "img": "https://i.ibb.co.com/8DC8zR4k/ASUS-Vivobook-Go-15-E1504-F-Black-4567.webp"
+            },
+            {
+                "id": 2,
+                "name": "ASUS Vivobook 14 (X1404VA)",
+                "price": "61,999৳",
+                "img": "https://i.ibb.co.com/qLWJ4fp8/Asus-Vivobook-15-X1504-VA-d-5485.webp"
+            },
+            {
+                "id": 3,
+                "name": "ASUS TUF Gaming F15 (FX507)",
+                "price": "1,08,990৳",
+                "img": "https://i.ibb.co.com/PZ9BXg9b/tuf-gaming-a15-fa507nu-01-500x500.jpg"
+            },
+            {
+                "id": 4,
+                "name": "ASUS Zenbook 14 OLED (UX3405)",
+                "price": "1,22,990৳",
+                "img": "https://i.ibb.co.com/TxTdwYgh/zenbook-14-ux3405ca-04-500x500.webp"
+            }
+        ]
+    },
+    "watch": {
+        "appleWatch": [
+            {
+                "id": 1,
+                "brand": "Apple",
+                "model": "Apple Watch Series 10 (42mm, Aluminum, GPS)",
+                "price": "৳43,500",
+                "img": "https://i.ibb.co.com/BHbGh9bJ/Apple-Watch-Series-10-Aluminum-Silver-7765-removebg-preview.png"
+            },
+            {
+                "id": 2,
+                "brand": "Apple",
+                "model": "Apple Watch Ultra 2 (49mm, Titanium, GPS+Cellular)",
+                "price": "৳115,000",
+                "img": "https://www.startech.com.bd/image/cache/catalog/smart-watch/apple/watch-ultra-2/watch-ultra-2-01-500x500.webp"
+            }
+        ],
+        "samsungWatch": [
+            {
+                "id": 1,
+                "brand": "Samsung",
+                "model": "Samsung Galaxy Watch 7 (40mm, Bluetooth)",
+                "price": "৳19,900",
+                "img": "https://i.ibb.co.com/Pv4S4TFP/Galaxy-Watch7-Silver-2203.webp"
+            },
+            {
+                "id": 2,
+                "brand": "Samsung",
+                "model": "Samsung Galaxy Watch 8",
+                "price": "৳24,696",
+                "img": "https://i.ibb.co.com/R4HFy1Pp/galaxy-watch8-001-500x500.webp"
+            }
+        ]
+    },
+    "gadget": {
+        "airpods": [
+            {
+                "id": 1,
+                "brand": "Samsung",
+                "model": "Samsung Galaxy Buds 3 Pro",
+                "price": "৳16,990",
+                "img": "https://i.ibb.co.com/Q77bWP49/Galaxy-Buds3-Proaa-3136.webp"
+            },
+            {
+                "id": 2,
+                "brand": "Sony",
+                "model": "Sony WF-1000XM5 (Industry Leading ANC)",
+                "price": "22,490",
+                "img": "https://i.ibb.co.com/gbR94L0W/20230812-1691813442-757547.jpg"
+            },
+            {
+                "id": 3,
+                "brand": "Soundcore",
+                "model": "Anker Soundcore Liberty 4 NC",
+                "price": "৳6,999",
+                "img": "https://i.ibb.co.com/nNGN6x87/Anker-Soundcore-Liberty-4-NC-2-1697-4429.webp"
+            },
+            {
+                "id": 4,
+                "brand": "Jabra",
+                "model": "Jabra Elite 10 ANC Earbuds",
+                "price": "৳24,000",
+                "img": "https://www.startech.com.bd/image/cache/catalog/earbuds/jabra/elite-10/elite-10-01-500x500.webp"
+            },
+            {
+                "id": 5,
+                "brand": "Apple",
+                "model": "Apple AirPods Pro 3",
+                "price": "৳28,000",
+                "img": "https://i.ibb.co.com/RkHCHB0G/Air-Pods-Pro-3-8576.webp"
+            }
+        ],
+        "keyboard": [
+            {
+                "id": 1,
+                "brand": "Logitech",
+                "model": "Logitech MX Keys Advanced Wireless Illuminated Keyboard",
+                "price": "৳18,000",
+                "img": "https://i.ibb.co.com/4Rpc2dNk/4259-94527.webp"
+            },
+            {
+                "id": 2,
+                "brand": "A4Tech",
+                "model": "A4tech Bloody WS98 Tri Mode Wireless RGB Mechanical Keyboard",
+                "price": "৳7,500",
+                "img": "https://i.ibb.co.com/X9pXKrQ/bloody-ws998-naraka-500x500.webp"
+            },
+            {
+                "id": 3,
+                "brand": "Asus",
+                "model": "Asus ROG Azoth Extreme RGB Tri-Mode Wireless Mechanical Gaming Keyboard",
+                "price": "৳63,999",
+                "img": "https://i.ibb.co.com/b5WJQrK8/rog-azoth-extreme-01-500x500.webp"
+            },
+            {
+                "id": 4,
+                "brand": "Razer",
+                "model": "Razer BlackWidow V3 Mechanical Keyboard",
+                "price": "৳11,500",
+                "img": "https://i.ibb.co.com/sdrCyDG0/blackwidow-v3-01-500x500.webp"
+            },
+            {
+                "id": 5,
+                "brand": "Apple",
+                "model": "Apple Magic Keyboard",
+                "price": "৳15,500",
+                "img": "https://i.ibb.co.com/Mb4SbvS/2875-70321.webp"
+            }
+        ],
+        "mouse": [
+            {
+                "id": 1,
+                "brand": "Logitech",
+                "model": "Logitech MX Master 4 Wireless Mouse",
+                "price": "৳14,500",
+                "img": "https://i.ibb.co.com/gb7H5qFx/mx-master-4-graphite-500x500.webp"
+            },
+            {
+                "id": 2,
+                "brand": "A4Tech",
+                "model": "A4tech Bloody R72 Ultra Duo Dual Mode Wireless Gaming Mouse",
+                "price": "৳4,900",
+                "img": "https://i.ibb.co.com/21ZGGsmN/bloody-r72-ultra-duo-proxy-boom-01-500x500.webp"
+            },
+            {
+                "id": 3,
+                "brand": "Apple",
+                "model": "Apple Magic Mouse 3",
+                "price": "10,000৳",
+                "img": "https://i.ibb.co.com/1tX8m4k8/5339-22276.webp"
+            },
+            {
+                "id": 4,
+                "brand": "Razer",
+                "model": "Razer DeathAdder Essential Gaming Mouse White",
+                "price": "৳2,350",
+                "img": "https://i.ibb.co.com/9xq9FZX/deathadder-essential-white-01-500x500.jpg"
+            },
+            {
+                "id": 5,
+                "brand": "Asus",
+                "model": "ASUS ROG Chakram X Origin Multi-mode Gaming Mouse",
+                "price": "৳21,350",
+                "img": "https://i.ibb.co.com/RpnX6QNg/rog-chakram-x-origin-05-500x500.webp"
+            }
+        ]
+    },
+    "tv": {
+        "walton": [
+            {
+                "id": 1,
+                "model": "Walton WO65S28G",
+                "price": "৳299,900",
+                "img": "https://i.ibb.co.com/LzbyNsYb/03.jpg"
+            },
+            {
+                "id": 2,
+                "model": "Walton W75C9NG",
+                "price": "৳173,990",
+                "img": "https://i.ibb.co.com/ny1KX5G/4.jpg"
+            }
+        ],
+        "sony": [
+            {
+                "id": 1,
+                "name": "Sony Bravia XR-85X95L 85 Inch 4K Ultra HD Full Array LED Smart TV",
+                "price": "৳690,000",
+                "img":"https://i.ibb.co.com/nMXz2cx2/bravia-xr-85x95l-official-06-500x500.webp"
+            },
+            {
+                 "id": 2,
+                "name": "Sony Bravia 3 55\" 4K UHD Google TV",
+                "price": "৳129,900",
+                "img":"https://i.ibb.co.com/23y1sP3B/bravia-3-k-55s30-official-01-500x500.webp"
+            }
+        ]
+    }
+}

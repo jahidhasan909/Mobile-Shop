@@ -66,7 +66,7 @@ const Tranddingproduct = () => {
 
 
                 <div className="bg-white shadow-sm rounded-sm mx-auto text-center space-y-1 p-3">
-                    <div className="flex justify-end">
+                    <div className="flex justify-end animate-pulse">
                         <Chip className="rounded-sm p-2 bg-black/90 text-white">
                             <Chip.Label className="flex items-center gap-1"><Flame /> Hot Product</Chip.Label>
                         </Chip>
@@ -74,7 +74,7 @@ const Tranddingproduct = () => {
                     <img className="h-[400px]" src="https://i.ibb.co.com/20FqdTWK/Apple-i-Phone-17-Pro-Max-Design-PNG-thumb-removebg-preview.png" alt="" />
                     <p className="text-[1.10rem] mt-7">iPhone 17 Pro Max</p>
                     <h1 className="font-bold text-xl mt-4">৳1,69,990</h1>
-                    <Button className='w-[290px] rounded-sm bg-black text-white mt-5'>Add to Cart !</Button>
+                    <Button className='w-[290px] rounded-sm bg-black text-white mt-5 animate-bounce'>Add to Cart !</Button>
                 </div>
 
 

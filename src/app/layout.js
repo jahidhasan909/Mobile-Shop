@@ -29,7 +29,7 @@ export default function RootLayout({ children }) {
       <body className="min-h-full flex flex-col">
         <ProvidersTheme>
           <Navbar></Navbar>
-          <main className="grow bg-neutral-100">
+          <main className="grow bg-neutral-100 dark:bg-black/50">
             {children}
           </main>
           <Footer></Footer>
