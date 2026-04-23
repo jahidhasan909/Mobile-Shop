@@ -326,7 +326,7 @@
                 "ram": "18GB",
                 "storage": "512GB SSD",
                 "display": "16.2 inch Liquid Retina XDR",
-                "price_usd": "৳383,500",
+                "price": "৳383,500",
                 "img": "https://i.ibb.co.com/8ndqfFzY/Mac-Book-Air-M1-13-inch-8256-GB-8-Core-CPU-7-Core-GPUa-4352.webp"
             },
             {
@@ -337,26 +337,26 @@
                 "ram": "36GB",
                 "storage": "1TB SSD",
                 "display": "16.2 inch Liquid Retina XDR",
-                "price_usd": "৳390,500",
+                "price": "৳390,500",
                 "img": "https://i.ibb.co.com/gXmxG8L/Mac-Book-Pro-14-inch-M5-254f8453-0647-4bb9-8012-f7b2f788e670-removebg-preview.png"
             }
         ],
         "huawei": [
             {
                 "id": 1,
-                "name": "Huawei MateBook D15",
-                "price": "60,000৳",
-                "img": "https://i.ibb.co.com/5gYkrsF7/Huawei-Mate-Book-D15-Mystic-Silver-a-4425.webp"
+                "model": "Huawei Matebook Fold",
+                "price": "170,000৳",
+                "img": "https://i.ibb.co.com/fddt9xJ4/HUAWEI-Mate-Book-Fold-Ultimate-Edition-10.webp"
             },
             {
                 "id": 2,
-                "name": "Huawei MateBook D14",
+                "model": "Huawei MateBook D14",
                 "price": "74,800৳",
                 "img": "https://i.ibb.co.com/pBgxjzv5/Huawei-Mate-Book-D14-Space-Gray-a-3625.webp"
             },
             {
                 "id": 3,
-                "name": "Huawei MateBook D16",
+                "model": "Huawei MateBook D16",
                 "price": "98,400৳",
                 "img": "https://i.ibb.co.com/39Xvxbp5/matebook-d-16-01-500x500.webp"
             }
@@ -364,25 +364,25 @@
         "hp": [
             {
                 "id": 1,
-                "name": "HP 15s-fq5786TU",
+                "model": "HP 15s-fq5786TU",
                 "price": "65,800৳",
                 "img": "https://i.ibb.co.com/LDwRM2kk/HP-15-S-FQ5786-TU-a-3664.webp"
             },
             {
                 "id": 2,
-                "name": "HP Pavilion 15-eg3148ni",
+                "model": "HP Pavilion 15-eg3148ni",
                 "price": "78,999৳",
                 "img": "https://i.ibb.co.com/TBsrmHZx/images.jpg"
             },
             {
                 "id": 3,
-                "name": "HP Victus Gaming 15-fb3166AX",
+                "model": "HP Victus Gaming 15-fb3166AX",
                 "price": "100,000৳",
                 "img": "https://i.ibb.co.com/FbnT5HhC/HP-Victus-15-Blue-b-9868.webp"
             },
             {
                 "id": 4,
-                "name": "HP Spectre x360 (Core Ultra 7)",
+                "model": "HP Spectre x360 (Core Ultra 7)",
                 "price": "2,29,899৳",
                 "img": "https://i.ibb.co.com/ksKfKr5y/HP-Spectre-x360-14-inch-2-in-1-Laptop-2024-14th-Gen-Laptop-price-in-Bangladesh-MC-Solution-BD-1.webp"
             }
@@ -390,25 +390,25 @@
         "asus": [
             {
                 "id": 1,
-                "name": "ASUS Vivobook Go 15 (E1504F)",
+                "model": "ASUS Vivobook Go 15 (E1504F)",
                 "price": "59,500৳",
                 "img": "https://i.ibb.co.com/8DC8zR4k/ASUS-Vivobook-Go-15-E1504-F-Black-4567.webp"
             },
             {
                 "id": 2,
-                "name": "ASUS Vivobook 14 (X1404VA)",
+                "model": "ASUS Vivobook 14 (X1404VA)",
                 "price": "61,999৳",
                 "img": "https://i.ibb.co.com/qLWJ4fp8/Asus-Vivobook-15-X1504-VA-d-5485.webp"
             },
             {
                 "id": 3,
-                "name": "ASUS TUF Gaming F15 (FX507)",
+                "model": "ASUS TUF Gaming F15 (FX507)",
                 "price": "1,08,990৳",
                 "img": "https://i.ibb.co.com/PZ9BXg9b/tuf-gaming-a15-fa507nu-01-500x500.jpg"
             },
             {
                 "id": 4,
-                "name": "ASUS Zenbook 14 OLED (UX3405)",
+                "model": "ASUS Zenbook 14 OLED (UX3405)",
                 "price": "1,22,990৳",
                 "img": "https://i.ibb.co.com/TxTdwYgh/zenbook-14-ux3405ca-04-500x500.webp"
             }
@@ -428,7 +428,7 @@
                 "brand": "Apple",
                 "model": "Apple Watch Ultra 2 (49mm, Titanium, GPS+Cellular)",
                 "price": "৳115,000",
-                "img": "https://www.startech.com.bd/image/cache/catalog/smart-watch/apple/watch-ultra-2/watch-ultra-2-01-500x500.webp"
+                "img": "https://i.ibb.co.com/vxFNFydJ/Apple-Watch-Ultra-2-Milanese-Loop-Black-7092.webp"
             }
         ],
         "samsungWatch": [
@@ -522,6 +522,7 @@
                 "price": "৳15,500",
                 "img": "https://i.ibb.co.com/Mb4SbvS/2875-70321.webp"
             }
+          
         ],
         "mouse": [
             {
@@ -581,13 +582,13 @@
                 "id": 1,
                 "name": "Sony Bravia XR-85X95L 85 Inch 4K Ultra HD Full Array LED Smart TV",
                 "price": "৳690,000",
-                "img":"https://i.ibb.co.com/nMXz2cx2/bravia-xr-85x95l-official-06-500x500.webp"
+                "img": "https://i.ibb.co.com/nMXz2cx2/bravia-xr-85x95l-official-06-500x500.webp"
             },
             {
-                 "id": 2,
+                "id": 2,
                 "name": "Sony Bravia 3 55\" 4K UHD Google TV",
                 "price": "৳129,900",
-                "img":"https://i.ibb.co.com/23y1sP3B/bravia-3-k-55s30-official-01-500x500.webp"
+                "img": "https://i.ibb.co.com/23y1sP3B/bravia-3-k-55s30-official-01-500x500.webp"
             }
         ]
     }

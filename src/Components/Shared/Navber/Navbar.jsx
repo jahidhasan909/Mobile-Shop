@@ -15,8 +15,8 @@ const Navbar = () => {
         <div className="w-full border-b border-separator bg-black  text-white  backdrop-blur-lg">
             <nav className="sticky top-0 z-40  container mx-auto">
                 <header className="flex h-20 items-center justify-between px-6">
-                    <div className="flex items-center">
-                        <Link href='/'> <p className="font-bold text-4xl animate-pulse">dazzle</p></Link>
+                    <div className="flex items-center relative">
+                        <Link href='/'> <p className="font-bold text-4xl animate-pulse " >dazzle</p></Link>
                     </div>
 
                     <SearchField name="search">
