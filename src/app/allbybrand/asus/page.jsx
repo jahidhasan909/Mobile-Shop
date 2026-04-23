@@ -1,35 +1,31 @@
 import AsusLaptopCard from '@/Components/AllCards/laptopCard/AsusLaptop';
-import AsusDropLaptop from '@/Components/DropDownInner/LaptopDrop/AsusDropLaptop';
-import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
 
 
+
 export const metadata = {
-    title: 'Asus Laptop',
+    title: 'Asus',
     description: '...',
 }
 
 
 
-const AsusLaptop = async () => {
+
+const AsusBrand = async() => {
     const data = await fetch("http://localhost:3000/data.json")
     const res = await data.json()
     const asusLaptop = res.laptop.asus
     return (
         <div>
             <div className="container mx-auto my-10">
-                <p className="py-3 flex items-center gap-1"> <House></House> / Products / Categories / Laptop</p>
                 <div className="bg-white p-5 rounded-md my-4">
                     <Button className="bg-black text-white" variant="outline">Asus</Button>
                 </div>
                 <div className="flex justify-between items-center gap-3">
                     <div className="bg-neutral-200 w-full p-4 rounded-md">
-                        <h3>Products of Laptop</h3>
+                        <h3>Products of Asus</h3>
                     </div>
-
-                    <AsusDropLaptop></AsusDropLaptop>
-
                 </div>
 
 
@@ -43,4 +39,4 @@ const AsusLaptop = async () => {
     );
 };
 
-export default AsusLaptop;
+export default AsusBrand;

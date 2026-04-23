@@ -1,35 +1,32 @@
 import NothingCard from '@/Components/AllCards/NothingCard';
-import NothingDropDown from '@/Components/DropDownInner/NothingDropDown';
-import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
 
 
 
 export const metadata = {
-    title: 'Nothing Phone',
+    title: 'Nothing',
     description: '...',
 }
 
 
 
-const NothingPage = async () => {
-    const data = await fetch("http://localhost:3000/data.json")
+const NothingBrand = async() => {
+ const data = await fetch("http://localhost:3000/data.json")
     const res = await data.json()
     const nothing = res.phone.nothing
     return (
         <div>
             <div className=" container mx-auto my-10">
-                <p className="py-3 flex items-center gap-1"> <House></House> / Products / Categories / phones</p>
+             
                 <div className="bg-white p-5 rounded-md my-4">
                     <Button className="bg-black text-white" variant="outline">Nothing</Button>
                 </div>
                 <div className="flex justify-between items-center gap-3">
                     <div className="bg-neutral-200 w-full p-4 rounded-md">
-                        <h3>Products of phones</h3>
+                        <h3>Products of Nothing</h3>
                     </div>
 
-                    <NothingDropDown></NothingDropDown>
 
                 </div>
 
@@ -44,4 +41,4 @@ const NothingPage = async () => {
     );
 };
 
-export default NothingPage;
+export default NothingBrand;

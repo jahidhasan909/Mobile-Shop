@@ -4,6 +4,14 @@ import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
 
+
+export const metadata = {
+    title: 'Apple Watch',
+    description: '...',
+}
+
+
+
 const AppleWatchPage = async() => {
 
      const data = await fetch("http://localhost:3000/data.json")

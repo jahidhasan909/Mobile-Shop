@@ -4,6 +4,14 @@ import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
 
+
+export const metadata = {
+    title: 'Tablet Apple',
+    description: '...',
+}
+
+
+
 const IphoneTapPage = async () => {
     const data = await fetch("http://localhost:3000/data.json")
     const res = await data.json()

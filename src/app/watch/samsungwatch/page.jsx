@@ -4,6 +4,16 @@ import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
 
+
+
+export const metadata = {
+    title: 'Samsung Watch',
+    description: '...',
+}
+
+
+
+
 const SamsungWatchPage = async () => {
 
 

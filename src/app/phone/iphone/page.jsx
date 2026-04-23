@@ -4,6 +4,10 @@ import { House } from "@gravity-ui/icons";
 import { Button } from "@heroui/react";
 
 
+export const metadata = {
+    title: 'Apple phone',
+    description: 'Apple',
+}
 
 
 const IphonePage = async () => {

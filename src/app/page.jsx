@@ -7,6 +7,13 @@ import ShopByBrand from "@/Components/ShopByBrand/ShopByBrand";
 import Tranddingproduct from "@/Components/TopProduct/Tranddingproduct";
 
 
+export const metadata = {
+    title: 'Home Page',
+    description: '...',
+}
+
+
+
 const HomePage = () => {
     return (
         <div className="">

@@ -6,7 +6,7 @@ const AppleWatchCard = ({ appleWatchs }) => {
             <Card className="bg-white rounded-md py-6 hover:shadow-md hover:shadow-neutral-200" variant="tertiary">
                 <Card.Header className=' items-center  justify-center space-y-2'>
                     <img className='h-[200px]' src={appleWatchs.img} alt="" />
-                    <Card.Title>{appleWatchs.model}</Card.Title>
+                    <Card.Title className='line-clamp-1'>{appleWatchs.model}</Card.Title>
                     <Card.Title className='font-bold'>{appleWatchs.price}</Card.Title>
                 </Card.Header>
                 <Card.Content >

@@ -1,37 +1,32 @@
 import HpLaptopCard from '@/Components/AllCards/laptopCard/HpLaptopCard';
 import DropHpLaptop from '@/Components/DropDownInner/LaptopDrop/DropHpLaptop';
-import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
 
 
 
 export const metadata = {
-    title: 'HP Laptop',
+    title: 'Hp',
     description: '...',
 }
 
 
-
-
-const HpLaptop = async () => {
-    const data = await fetch("http://localhost:3000/data.json")
+const HPBrand = async() => {
+  const data = await fetch("http://localhost:3000/data.json")
     const res = await data.json()
     const hpLaptop = res.laptop.hp
     return (
         <div>
             <div className="container mx-auto my-10">
-                <p className="py-3 flex items-center gap-1"> <House></House> / Products / Categories / Laptop</p>
                 <div className="bg-white p-5 rounded-md my-4">
                     <Button className="bg-black text-white" variant="outline">HP</Button>
                 </div>
                 <div className="flex justify-between items-center gap-3">
                     <div className="bg-neutral-200 w-full p-4 rounded-md">
-                        <h3>Products of Laptop</h3>
+                        <h3>Products of Hp</h3>
                     </div>
 
-                    <DropHpLaptop></DropHpLaptop>
-
+              
                 </div>
 
 
@@ -45,4 +40,4 @@ const HpLaptop = async () => {
     );
 };
 
-export default HpLaptop;
+export default HPBrand;

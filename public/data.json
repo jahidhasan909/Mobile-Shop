@@ -224,6 +224,7 @@
             {
                 "id": 1,
                 "model": "Galaxy Tab S9",
+                "price": "৳60,500",
                 "img": "https://i.ibb.co.com/HDf4Qydw/Galaxy-Tab-S9-Silver-2921.webp"
             }
         ]
@@ -522,7 +523,6 @@
                 "price": "৳15,500",
                 "img": "https://i.ibb.co.com/Mb4SbvS/2875-70321.webp"
             }
-          
         ],
         "mouse": [
             {

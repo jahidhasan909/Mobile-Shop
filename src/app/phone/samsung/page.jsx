@@ -4,6 +4,17 @@ import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
 
+
+
+export const metadata = {
+    title: 'Samsung phone',
+    description: '...',
+}
+
+
+
+
+
 const SamsungPage = async () => {
 
     const data = await fetch("http://localhost:3000/data.json")

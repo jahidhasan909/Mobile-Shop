@@ -4,6 +4,15 @@ import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
 
+
+export const metadata = {
+    title: 'Mouse',
+    description: '...',
+}
+
+
+
+
 const Mousepage = async() => {
     const data = await fetch("http://localhost:3000/data.json")
     const res = await data.json()
