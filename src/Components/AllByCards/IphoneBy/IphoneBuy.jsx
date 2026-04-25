@@ -2,6 +2,7 @@ import { IphoneAddCart } from '@/context/ContextPages';
 import { Button } from '@heroui/react';
 import Image from 'next/image';
 import React, { useContext } from 'react';
+import { toast } from 'react-toastify';
 
 const IphoneBuy = ({ iphones }) => {
     const { iphoneCart, setCartIphone } = useContext(IphoneAddCart)
@@ -9,6 +10,7 @@ const IphoneBuy = ({ iphones }) => {
     const handleDeletBtn = () => {
         const filterarray = iphoneCart.filter(iphoness => iphoness.id !== iphones.id)
         setCartIphone(filterarray)
+        toast.error(`${iphones.model} Removed`)
     }
 
 
