@@ -6,7 +6,7 @@ import { IoWatchOutline } from "react-icons/io5";
 
 import React from 'react';
 
-import { LogoAcrobat, Smartphone } from "@gravity-ui/icons";
+import { LogoAcrobat, ShoppingCart, Smartphone } from "@gravity-ui/icons";
 import { FaTv } from "react-icons/fa";
 
 import Link from "next/link";
@@ -14,7 +14,7 @@ import Link from "next/link";
 const Manuvar = () => {
     return (
         <div className="bg-white shadow-sm">
-            <div className="grid grid-cols-7 items-center container mx-auto py-4 px-6">
+            <div className="flex justify-around items-center container mx-auto py-4 px-6">
 
 
 
@@ -99,8 +99,9 @@ const Manuvar = () => {
                 </div>
 
 
-                <Button variant='outline' className='rounded bg-black text-white w-[160px]'>ONLINE EXCLUSIVE</Button>
-
+                <div><Link href="/cart" className="flex items-center gap-1">
+                    <Button className='rounded text-white bg-black' variant="outline"><ShoppingCart></ShoppingCart> CART</Button>
+                </Link></div>
             </div>
         </div>
     );
