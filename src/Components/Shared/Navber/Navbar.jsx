@@ -1,13 +1,25 @@
+"use client"
 import { ThemeSwitch } from "@/Components/ThemeSwitch";
+import { useSession } from "@/lib/auth-client";
 import { ShoppingCart } from "@gravity-ui/icons";
 import { Button, SearchField } from "@heroui/react";
 import Link from "next/link";
+
+import { HashLoader } from "react-spinners";
 
 
 const Navbar = () => {
 
 
+    const { data, isPending } = useSession()
 
+    const user = data?.user
+
+    if (isPending) {
+        <div className='flex items-center justify-center min-h-screen'>
+            <HashLoader />
+        </div>
+    }
 
 
 
@@ -33,9 +45,7 @@ const Navbar = () => {
                         <li><Link href="" className="flex items-center gap-1">
                             <Button className='rounded text-white' variant="outline"><ShoppingCart></ShoppingCart> CART</Button>
                         </Link></li>
-                        <li><Link href="">
-                            <Button className='rounded text-white' variant="outline">LOGIN</Button>
-                        </Link></li>
+                        <li>{user && <p className="text-white">{user.name}</p>}</li>
                     </ul>
                 </header>
             </nav>

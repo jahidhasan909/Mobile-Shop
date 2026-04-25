@@ -5,18 +5,18 @@ import { FaTabletAlt } from "react-icons/fa";
 import { IoWatchOutline } from "react-icons/io5";
 
 import React from 'react';
-import { DropdownManu } from "../DropDown/DropDown";
-import { LayoutSideContent, LogoAcrobat, Smartphone } from "@gravity-ui/icons";
+
+import { LogoAcrobat, Smartphone } from "@gravity-ui/icons";
 import { FaTv } from "react-icons/fa";
-import { BsPciCardSound } from "react-icons/bs";
+
 import Link from "next/link";
 
 const Manuvar = () => {
     return (
         <div className="bg-white shadow-sm">
-            <div className="grid grid-cols-8 items-center container mx-auto py-4 px-6">
+            <div className="grid grid-cols-7 items-center container mx-auto py-4 px-6">
 
-                <DropdownManu></DropdownManu>
+
 
 
                 <div className='relative group hover:cursor-pointer'>
