@@ -1,13 +1,15 @@
 'use client'
 import HuaweiBuy from '@/Components/AllByCards/huaweiby/Huaweibuy';
 import IphoneBuy from '@/Components/AllByCards/IphoneBy/IphoneBuy';
+import LaptopAppleBuy from '@/Components/AllByCards/LaptopApple/LaptopAppleBuy';
 import MotorolaBuy from '@/Components/AllByCards/motorolaby/MotorolaBuy';
 import NothingBuy from '@/Components/AllByCards/nothingby/NothingBuy';
 import PixelBuy from '@/Components/AllByCards/pixel/PixelBuy';
 import RedmiBuy from '@/Components/AllByCards/redmiby/RedmiBuy';
 import SamsungBuy from '@/Components/AllByCards/Samsungby/SamsungBuy';
 import TabletIphoneBuy from '@/Components/AllByCards/TabletIphoneBuy/TabletIphoneBuy';
-import { GooglePixelAddCart, HuaweiAddCart, IphoneAddCart, IphoneTabletCart, MotorolaAddCart, NothingAddCart, RedmiAddCart, SamsungAddCart } from '@/context/ContextPages';
+import TabletSamsungBuy from '@/Components/AllByCards/TabletSamsung/TabletSamsung';
+import { GooglePixelAddCart, HuaweiAddCart, IphoneAddCart, IphoneTabletCart, LaptopApple, MotorolaAddCart, NothingAddCart, RedmiAddCart, SamsungAddCart, SamsungTabletCart } from '@/context/ContextPages';
 import { Button } from '@heroui/react';
 import Image from 'next/image';
 import React, { useContext } from 'react';
@@ -24,6 +26,8 @@ const CartPage = () => {
     const { nothingCart, setNothingCart } = useContext(NothingAddCart)
     const { redmiCart, setRedmiCart } = useContext(RedmiAddCart)
     const { iphonTapletCart, setIphoneTabletCart } = useContext(IphoneTabletCart)
+    const { samsungTapletCart, setsamsungTabletCart } = useContext(SamsungTabletCart)
+    const { appleLaptop, setAppleLaptop } = useContext(LaptopApple)
 
 
 
@@ -35,7 +39,9 @@ const CartPage = () => {
         { phone: motorolaCart, id: Date.now() || [] },
         { phone: nothingCart, id: Date.now() || [] },
         { phone: redmiCart, id: Date.now() || [] },
-        { phone: iphonTapletCart, id: Date.now() || [] }
+        { phone: iphonTapletCart, id: Date.now() || [] },
+        { phone: samsungTapletCart, id: Date.now() || [] },
+        { phone: appleLaptop, id: Date.now() || [] }
     ].filter(cart => cart.phone.length > 0)
 
     const handleCheckOut = () => {
@@ -47,6 +53,8 @@ const CartPage = () => {
         setNothingCart([])
         setRedmiCart([])
         setIphoneTabletCart([])
+        setsamsungTabletCart([])
+        setAppleLaptop([])
         toast.success('proceed to Checkout successful')
     }
 
@@ -77,7 +85,13 @@ const CartPage = () => {
                     redmiCart.map(redmi => <RedmiBuy key={redmi.id} redmi={redmi}></RedmiBuy>)
                 }
                 {
-                    iphonTapletCart.map(iphonetablet=> <TabletIphoneBuy key={iphonetablet.id} iphonetablet={iphonetablet}></TabletIphoneBuy>)
+                    iphonTapletCart.map(iphonetablet => <TabletIphoneBuy key={iphonetablet.id} iphonetablet={iphonetablet}></TabletIphoneBuy>)
+                }
+                {
+                    samsungTapletCart.map(samtab => <TabletSamsungBuy key={samtab.id} samtab={samtab}></TabletSamsungBuy>)
+                }
+                {
+                    appleLaptop.map(applaptop=> <LaptopAppleBuy key={applaptop.id} applaptop={applaptop}></LaptopAppleBuy>)
                 }
             </div>
 

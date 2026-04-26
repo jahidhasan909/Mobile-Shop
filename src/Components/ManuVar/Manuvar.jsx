@@ -54,9 +54,8 @@ const Manuvar = () => {
                     <div className='absolute hidden rounded-md shadow-md top-full group-hover:block bg-white left-0 z-50'>
                         <ul className='flex flex-col w-[120px] p-5 space-y-2'>
                             <li><Link className="hover:bg-neutral-300 hover:p-2 hover:rounded-md" href='/laptop/apple'>Apple</Link></li>
-                            <li><Link className="hover:bg-neutral-300 hover:p-2 hover:rounded-md" href='/laptop/huawei'>Huawei</Link></li>
                             <li><Link className="hover:bg-neutral-300 hover:p-2 hover:rounded-md" href='/laptop/hp'>Hp</Link></li>
-                            <li><Link className="hover:bg-neutral-300 hover:p-2 hover:rounded-md" href='/laptop/asus'>Asus</Link></li>
+                         
                         </ul>
                     </div>
                 </div>
@@ -84,20 +83,6 @@ const Manuvar = () => {
                         </ul>
                     </div>
                 </div>
-
-
-
-                <div className=' relative group hover:cursor-pointer'>
-                    <button className="flex items-center gap-1 hover:cursor-pointer">
-                        <FaTv /> SMARTTV</button>
-                    <div className='absolute hidden rounded-md shadow-md top-full group-hover:block bg-white left-0 z-50'>
-                        <ul className='flex flex-col p-5 w-[120px] space-y-2'>
-                            <li><Link className="hover:bg-neutral-300 hover:p-2 hover:rounded-md" href='/tv/walton'>walton</Link></li>
-                            <li><Link className="hover:bg-neutral-300 hover:p-2 hover:rounded-md" href='/tv/sony'>Sony</Link></li>
-                        </ul>
-                    </div>
-                </div>
-
 
                 <div><Link href="/cart" className="flex items-center gap-1">
                     <Button className='rounded text-white bg-black' variant="outline"><ShoppingCart></ShoppingCart> CART</Button>

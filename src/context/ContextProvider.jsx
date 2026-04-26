@@ -1,6 +1,6 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import { GooglePixelAddCart, HuaweiAddCart, IphoneAddCart, IphoneTabletCart, MotorolaAddCart, NothingAddCart, RedmiAddCart, SamsungAddCart } from './ContextPages';
+import { GooglePixelAddCart, HuaweiAddCart, IphoneAddCart, IphoneTabletCart, LaptopApple, MotorolaAddCart, NothingAddCart, RedmiAddCart, SamsungAddCart, SamsungTabletCart } from './ContextPages';
 
 
 const ContextProvider = ({ children }) => {
@@ -13,6 +13,8 @@ const ContextProvider = ({ children }) => {
     const [nothingCart, setNothingCart] = useState([])
     const [redmiCart, setRedmiCart] = useState([])
     const [iphonTapletCart, setIphoneTabletCart] = useState([])
+    const [samsungTapletCart, setsamsungTabletCart] = useState([])
+    const [appleLaptop, setAppleLaptop] = useState([])
 
     useEffect(() => {
         const saveIphone = localStorage.getItem('iphone_Cart')
@@ -23,6 +25,8 @@ const ContextProvider = ({ children }) => {
         const saveNothing = localStorage.getItem('nothing_Cart')
         const saveRedmi = localStorage.getItem('redmi_Cart')
         const saveIphoneTablet = localStorage.getItem('iphonetablet_Cart')
+        const saveSamsungTablet = localStorage.getItem('samsungtablet_Cart')
+        const saveAppleLaptop = localStorage.getItem('laptopapple_Cart')
         if (saveIphone) {
             setCartIphone(JSON.parse(saveIphone))
         }
@@ -48,6 +52,12 @@ const ContextProvider = ({ children }) => {
         if (saveIphoneTablet) {
             setIphoneTabletCart(JSON.parse(saveIphoneTablet))
         }
+        if (saveSamsungTablet) {
+            setsamsungTabletCart(JSON.parse(saveSamsungTablet))
+        }
+        if (saveAppleLaptop) {
+            setAppleLaptop(JSON.parse(saveAppleLaptop))
+        }
     }, [])
 
     useEffect(() => {
@@ -59,9 +69,11 @@ const ContextProvider = ({ children }) => {
         localStorage.setItem('nothing_Cart', JSON.stringify(nothingCart))
         localStorage.setItem('redmi_Cart', JSON.stringify(redmiCart))
         localStorage.setItem('iphonetablet_Cart', JSON.stringify(iphonTapletCart))
+        localStorage.setItem('samsungtablet_Cart', JSON.stringify(samsungTapletCart))
+        localStorage.setItem('laptopapple_Cart', JSON.stringify(appleLaptop))
 
     }, [iphoneCart, samsungCart, huaweiCart, googlePixelCart,
-        motorolaCart, nothingCart, redmiCart, iphonTapletCart])
+        motorolaCart, nothingCart, redmiCart, iphonTapletCart, samsungTapletCart, appleLaptop])
 
 
 
@@ -74,7 +86,12 @@ const ContextProvider = ({ children }) => {
                         <NothingAddCart.Provider value={{ nothingCart, setNothingCart }}>
                             <RedmiAddCart.Provider value={{ redmiCart, setRedmiCart }}>
                                 <IphoneTabletCart.Provider value={{ iphonTapletCart, setIphoneTabletCart }}>
-                                    {children}
+                                    <SamsungTabletCart.Provider value={{ samsungTapletCart, setsamsungTabletCart }}>
+                                        <LaptopApple.Provider value={{ appleLaptop, setAppleLaptop }}>
+                                            {children}
+
+                                        </LaptopApple.Provider>
+                                    </SamsungTabletCart.Provider>
                                 </IphoneTabletCart.Provider>
                             </RedmiAddCart.Provider>
                         </NothingAddCart.Provider>

@@ -1,6 +1,7 @@
+"use client"
 import { IphoneAddCart, IphoneTabletCart } from '@/context/ContextPages';
 import { Button, Card } from '@heroui/react';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
 import { toast } from 'react-toastify';
 
 const TapIphoneCard = ({ iphonetaps }) => {
