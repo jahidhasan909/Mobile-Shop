@@ -15,7 +15,7 @@ const CardIphone = ({ iphones }) => {
         toast.success(`${iphones.model} Add Cart Successful`)
         setClick(true)
     }
-    console.log('cart:', iphoneCart);
+
 
 
 
