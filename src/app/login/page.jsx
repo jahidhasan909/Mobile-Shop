@@ -4,6 +4,7 @@ import { Button } from '@heroui/react';
 import { toast } from 'react-toastify';
 import { FaGithub, FaGoogle } from 'react-icons/fa';
 import { useForm } from 'react-hook-form';
+import Link from 'next/link';
 
 const Loginpage = () => {
 
@@ -65,6 +66,7 @@ const Loginpage = () => {
                             <Button type='submit' variant='outline' className="rounded-md w-full bg-black text-white mt-4">Sing Up</Button>
                             <Button onClick={handleGoogleLogin} variant='outline' className={'rounded-md w-full'}><FaGoogle /> LogIn With Google</Button>
                             <Button onClick={handleGitHubLogin} variant='outline' className={'rounded-md w-full'}><FaGithub /> LogIn With Github</Button>
+                            <p className='text-center text-xs'>Dont’t Have An Account ? <Link href={'/singup'} className='text-red-400'>Register</Link></p>
                         </fieldset>
                     </form>
                 </div>
