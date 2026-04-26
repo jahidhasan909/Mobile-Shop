@@ -15,9 +15,8 @@ const ContextProvider = ({ children }) => {
     }, [])
 
     useEffect(() => {
-        if (iphoneCart.length > 0) {
-            localStorage.setItem('iphone_Cart', JSON.stringify(iphoneCart))
-        }
+        localStorage.setItem('iphone_Cart', JSON.stringify(iphoneCart))
+
     }, [iphoneCart])
 
 

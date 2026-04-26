@@ -21,12 +21,11 @@ const CartPage = () => {
 
     return (
         <div className='container mx-auto flex flex-col gap-3 my-10'>
-            {iphoneCart.lenght === 0 ?
-                <div className='py-10'>
-                    <img className='w-60 h-52  mx-auto' src="https://i.ibb.co.com/XkrcpC6R/5166615.png" alt="" />
-                    <p className='text-center text-neutral/50'>Your cart is empty</p>
-                </div>
-                : iphoneCart.map(iphones => <IphoneBuy setCartIphone={setCartIphone} key={iphones.id} iphones={iphones}></IphoneBuy>)}
+            <h1 className='text-xl font-bold'>Your Cart</h1>
+            {iphoneCart.length == 0 ? <div className='py-10 bg-neutral-200 rounded-md'>
+                <img className='w-60 h-52  mx-auto' src="https://i.ibb.co.com/XkrcpC6R/5166615.png" alt="" />
+                <p className='text-center text-neutral/50'>Your cart is empty</p>
+            </div> : iphoneCart && iphoneCart.map(iphones => <IphoneBuy setCartIphone={setCartIphone} key={iphones.id} iphones={iphones}></IphoneBuy>)}
 
             {/* <div className='bg-black text-white flex justify-between w-3xl rounded-md p-5 font-bold'>
                 <h2>Total</h2>

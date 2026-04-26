@@ -3,8 +3,10 @@ import { ThemeSwitch } from "@/Components/ThemeSwitch";
 import { signOut, useSession } from "@/lib/auth-client";
 import { ShoppingCart } from "@gravity-ui/icons";
 import { Button, SearchField } from "@heroui/react";
+import Image from "next/image";
 import Link from "next/link";
-import { IoPersonCircleSharp } from "react-icons/io5";
+
+
 
 import { HashLoader } from "react-spinners";
 
@@ -21,6 +23,9 @@ const Navbar = () => {
             <HashLoader />
         </div>
     }
+    console.log(user);
+   
+
 
 
 
@@ -43,18 +48,18 @@ const Navbar = () => {
 
                     <ul className="flex items-center gap-4">
                         <li><ThemeSwitch></ThemeSwitch></li>
-                        <li>{user && <div className="text-white flex items-center gap-2">
+                        <li>{user ? <div className="text-white flex items-center gap-2">
                             <Button onClick={() => signOut()} variant="outline" className='text-white rounded-md'>Log Out</Button>
                             <div className="flex items-center gap-1">
-                                <span className="bg-white text-black rounded-full"> <IoPersonCircleSharp className="w-9 h-9" /></span>
+                                <Image className=' rounded-full' src={user?.image || 'https://i.ibb.co.com/Fb8tByM9/user.png'} width={40} height={10} alt='man'></Image>
                                 <div>
                                     <p>{user.name}</p>
                                     <p className="text-xs">{user.email}</p>
                                 </div>
                             </div>
-                        </div>}</li>
+                        </div> : <Button className={'rounded-md bg-black text-white'} variant="outline"><Link href={'/login'}>LogIn</Link></Button>}</li>
                     </ul>
-                    
+
                 </header>
             </nav>
         </div>

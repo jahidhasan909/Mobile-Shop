@@ -1,31 +1,30 @@
 'use client'
 import { authClient } from '@/lib/auth-client';
 import { Button } from '@heroui/react';
+import { useForm } from 'react-hook-form';
 import { toast } from 'react-toastify';
 
-import { useRouter } from 'next/navigation';
+
 
 const SingUpPage = () => {
 
-    const router = useRouter()
+    const {
+        register,
+        handleSubmit,
+        formState: { errors },
+    } = useForm()
 
-    const onSubmit = async (e) => {
-        e.preventDefault()
-        const formData = new FormData(e.target);
-        const userData = Object.fromEntries(formData.entries())
-        const { data, error } = await authClient.signUp.email(
+    const onSubmit = async (data) => {
+        const { email, password, photo, name } = data
+
+        const { data: res, error } = await authClient.signUp.email(
             {
-                name: userData.name,
-                email: userData.email,
-                password: userData.password,
+                name: name,
+                email: email,
+                password: password,
+                image: photo,
                 // callbackURL: '/',
             },
-            {
-                onSuccess: () => {
-                    router.push('/')
-                }
-            },
-
         )
 
 
@@ -35,10 +34,10 @@ const SingUpPage = () => {
         if (error) {
             toast.error("Error signing up: " + error.message)
         }
-        if (data) {
+        if (res) {
             toast.success("Sign up successful! Please check your email to verify your account.");
         }
-        console.log('mongodb', { data, error });
+        console.log('mongodb data img', { data, error });
 
 
     };
@@ -48,14 +47,16 @@ const SingUpPage = () => {
         <div className='container flex justify-center mx-auto my-10'>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl rounded-md">
                 <div className="card-body">
-                    <form onSubmit={onSubmit}>
+                    <form onSubmit={handleSubmit(onSubmit)}>
                         <fieldset className="fieldset">
                             <label className="label">Name</label>
-                            <input type="text" name='name' className='input rounded-md' placeholder='name' />
+                            <input type="text" className='input rounded-md' placeholder='name'{...register("name")} />
+                            <label className="label">Your Img Url</label>
+                            <input type="text" {...register("photo")} className='input rounded-md' placeholder='Url//' />
                             <label className="label">Email</label>
-                            <input type="email" name='email' className="input rounded-md" placeholder="Email" />
+                            <input type="email" {...register("email")} className="input rounded-md" placeholder="Email" />
                             <label className="label">Password</label>
-                            <input type="password" name='password' className="input rounded-md" placeholder="Password" />
+                            <input type="password" {...register("password")} className="input rounded-md" placeholder="Password" />
                             <Button type='submit' variant='outline' className="rounded-md w-full bg-black text-white mt-4">Sing Up</Button>
                         </fieldset>
                     </form>
