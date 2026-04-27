@@ -1,8 +1,9 @@
 "use client"
 import React, { useEffect, useState } from 'react';
-import { GooglePixelAddCart, HuaweiAddCart, IphoneAddCart, IphoneTabletCart, LaptopApple, LaptopHPAdded, MotorolaAddCart, NothingAddCart, RedmiAddCart, SamsungAddCart, SamsungTabletCart } from './ContextPages';
+import { GooglePixelAddCart, HuaweiAddCart, IphoneAddCart, IphoneTabletCart, LaptopApple, LaptopHPAdded, MotorolaAddCart, NothingAddCart, RedmiAddCart, SamsungAddCart, SamsungTabletCart, WatchAppleAdded, WatchSamsungAdded } from './ContextPages';
 import HpLaptop from '@/app/laptop/hp/page';
 import HpLaptopCard from '@/Components/AllCards/laptopCard/HpLaptopCard';
+import { Watch } from 'react-hook-form';
 
 
 const ContextProvider = ({ children }) => {
@@ -18,6 +19,8 @@ const ContextProvider = ({ children }) => {
     const [samsungTapletCart, setsamsungTabletCart] = useState([])
     const [appleLaptop, setAppleLaptop] = useState([])
     const [hPLaptop, setHpLaptop] = useState([])
+    const [watchapple, setAppleWatchCart] = useState([])
+    const [watchSamsung, setSamsungWatchCart] = useState([])
 
     useEffect(() => {
         const saveIphone = localStorage.getItem('iphone_Cart')
@@ -31,7 +34,10 @@ const ContextProvider = ({ children }) => {
         const saveSamsungTablet = localStorage.getItem('samsungtablet_Cart')
         const saveAppleLaptop = localStorage.getItem('laptopapple_Cart')
 
+
         const saveHpLaptop = localStorage.getItem('hplaptop_Cart')
+        const saveWatchApple = localStorage.getItem('watchapple_Cart')
+        const saveWatchSamsung = localStorage.getItem('watchsamsung_Cart')
 
 
         if (saveIphone) {
@@ -69,6 +75,12 @@ const ContextProvider = ({ children }) => {
         if (saveHpLaptop) {
             setHpLaptop(JSON.parse(saveHpLaptop))
         }
+        if (saveWatchApple) {
+            setAppleWatchCart(JSON.parse(saveWatchApple))
+        }
+        if (saveWatchSamsung) {
+            setSamsungWatchCart(JSON.parse(saveWatchSamsung))
+        }
     }, [])
 
     useEffect(() => {
@@ -83,10 +95,12 @@ const ContextProvider = ({ children }) => {
         localStorage.setItem('samsungtablet_Cart', JSON.stringify(samsungTapletCart))
         localStorage.setItem('laptopapple_Cart', JSON.stringify(appleLaptop))
         localStorage.setItem('hplaptop_Cart', JSON.stringify(hPLaptop))
+        localStorage.setItem('watchapple_Cart', JSON.stringify(watchapple))
+        localStorage.setItem('watchsamsung_Cart', JSON.stringify(watchSamsung))
 
     }, [iphoneCart, samsungCart, huaweiCart, googlePixelCart,
         motorolaCart, nothingCart, redmiCart, iphonTapletCart,
-        samsungTapletCart, appleLaptop, hPLaptop])
+        samsungTapletCart, appleLaptop, hPLaptop, watchapple, watchSamsung])
 
 
 
@@ -102,7 +116,11 @@ const ContextProvider = ({ children }) => {
                                     <SamsungTabletCart.Provider value={{ samsungTapletCart, setsamsungTabletCart }}>
                                         <LaptopApple.Provider value={{ appleLaptop, setAppleLaptop }}>
                                             <LaptopHPAdded.Provider value={{ hPLaptop, setHpLaptop }}>
-                                                {children}
+                                                <WatchAppleAdded.Provider value={{ watchapple, setAppleWatchCart }}>
+                                                    <WatchSamsungAdded.Provider value={{ watchSamsung, setSamsungWatchCart }}>
+                                                        {children}
+                                                    </WatchSamsungAdded.Provider>
+                                                </WatchAppleAdded.Provider>
                                             </LaptopHPAdded.Provider>
                                         </LaptopApple.Provider>
                                     </SamsungTabletCart.Provider>

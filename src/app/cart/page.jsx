@@ -10,7 +10,9 @@ import RedmiBuy from '@/Components/AllByCards/redmiby/RedmiBuy';
 import SamsungBuy from '@/Components/AllByCards/Samsungby/SamsungBuy';
 import TabletIphoneBuy from '@/Components/AllByCards/TabletIphoneBuy/TabletIphoneBuy';
 import TabletSamsungBuy from '@/Components/AllByCards/TabletSamsung/TabletSamsung';
-import { GooglePixelAddCart, HuaweiAddCart, IphoneAddCart, IphoneTabletCart, LaptopApple, LaptopHPAdded, MotorolaAddCart, NothingAddCart, RedmiAddCart, SamsungAddCart, SamsungTabletCart } from '@/context/ContextPages';
+import WatchApple from '@/Components/AllByCards/WatchAppleby/WatchAppleBuy';
+import WatchBuySamsung from '@/Components/AllByCards/WatchSamsungby/WatchSamungBuy';
+import { GooglePixelAddCart, HuaweiAddCart, IphoneAddCart, IphoneTabletCart, LaptopApple, LaptopHPAdded, MotorolaAddCart, NothingAddCart, RedmiAddCart, SamsungAddCart, SamsungTabletCart, WatchAppleAdded, WatchSamsungAdded } from '@/context/ContextPages';
 import { Button } from '@heroui/react';
 import Image from 'next/image';
 import React, { useContext } from 'react';
@@ -29,7 +31,9 @@ const CartPage = () => {
     const { iphonTapletCart, setIphoneTabletCart } = useContext(IphoneTabletCart)
     const { samsungTapletCart, setsamsungTabletCart } = useContext(SamsungTabletCart)
     const { appleLaptop, setAppleLaptop } = useContext(LaptopApple)
-     const { hPLaptop, setHpLaptop } = useContext(LaptopHPAdded)
+    const { hPLaptop, setHpLaptop } = useContext(LaptopHPAdded)
+    const { watchapple, setAppleWatchCart } = useContext(WatchAppleAdded)
+    const { watchSamsung, setSamsungWatchCart } = useContext(WatchSamsungAdded)
 
 
 
@@ -44,7 +48,9 @@ const CartPage = () => {
         { phone: iphonTapletCart, id: Date.now() || [] },
         { phone: samsungTapletCart, id: Date.now() || [] },
         { phone: appleLaptop, id: Date.now() || [] },
-        { phone: hPLaptop, id: Date.now() || [] }
+        { phone: hPLaptop, id: Date.now() || [] },
+        { phone: watchapple, id: Date.now() || [] },
+        { phone: watchSamsung, id: Date.now() || [] }
     ].filter(cart => cart.phone.length > 0)
 
     const handleCheckOut = () => {
@@ -59,6 +65,8 @@ const CartPage = () => {
         setsamsungTabletCart([])
         setAppleLaptop([])
         setHpLaptop([])
+        setAppleWatchCart([])
+        setSamsungWatchCart([])
         toast.success('proceed to Checkout successful')
     }
 
@@ -95,11 +103,17 @@ const CartPage = () => {
                     samsungTapletCart.map(samtab => <TabletSamsungBuy key={samtab.id} samtab={samtab}></TabletSamsungBuy>)
                 }
                 {
-                    appleLaptop.map(applaptop=> <LaptopAppleBuy key={applaptop.id} applaptop={applaptop}></LaptopAppleBuy>)
+                    appleLaptop.map(applaptop => <LaptopAppleBuy key={applaptop.id} applaptop={applaptop}></LaptopAppleBuy>)
                 }
 
                 {
-                    hPLaptop.map(laptophp=> <LaptopHpBuy key={laptophp.id} laptophp={laptophp}></LaptopHpBuy>)
+                    hPLaptop.map(laptophp => <LaptopHpBuy key={laptophp.id} laptophp={laptophp}></LaptopHpBuy>)
+                }
+                {
+                    watchapple.map(watchapples => <WatchApple key={watchapples.id} watchapples={watchapples}></WatchApple>)
+                }
+                {
+                    watchSamsung.map(watchsSamung => <WatchBuySamsung key={watchsSamung.id} watchsSamung={watchsSamung}></WatchBuySamsung>)
                 }
             </div>
 
