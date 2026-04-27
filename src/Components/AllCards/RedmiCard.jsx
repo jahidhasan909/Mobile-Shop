@@ -24,7 +24,7 @@ const RedmiCard = ({ redmis }) => {
                 <Card.Header className=' items-center  justify-center space-y-2'>
                     <img className='h-[200px]' src={redmis.img} alt="" />
                     <Card.Title>{redmis.model}</Card.Title>
-                    <Card.Title className='font-bold'>{redmis.price}</Card.Title>
+                    <Card.Title className='font-bold'>৳{redmis.price}</Card.Title>
                 </Card.Header>
                 <Card.Content >
                     <div className='flex gap-2 items-center justify-center'>

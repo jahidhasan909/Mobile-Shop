@@ -22,7 +22,7 @@ const Samsungtab = ({ samsungtabs }) => {
                 <Card.Header className=' items-center  justify-center space-y-2'>
                     <img className='h-[200px]' src={samsungtabs.img} alt="" />
                     <Card.Title>{samsungtabs.model}</Card.Title>
-                    <Card.Title className='font-bold'>{samsungtabs.price}</Card.Title>
+                    <Card.Title className='font-bold'>৳{samsungtabs.price}</Card.Title>
                 </Card.Header>
                 <Card.Content >
                     <div className='flex gap-2 items-center justify-center'>

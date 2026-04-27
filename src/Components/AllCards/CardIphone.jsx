@@ -25,7 +25,7 @@ const CardIphone = ({ iphones }) => {
                 <Card.Header className=' items-center  justify-center space-y-2'>
                     <img className='h-[200px]' src={iphones.img} alt="" />
                     <Card.Title>{iphones.model}</Card.Title>
-                    <Card.Title className='font-bold'>{iphones.price}</Card.Title>
+                    <Card.Title className='font-bold'>৳{iphones.price}</Card.Title>
                 </Card.Header>
                 <Card.Content >
                     <div className='flex gap-2 items-center justify-center'>

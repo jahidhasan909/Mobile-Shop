@@ -41,24 +41,39 @@ const CartPage = () => {
 
 
 
-    let arrayCopy = [
-        { phone: iphoneCart, id: Date.now() || [] },
-        { phone: samsungCart, id: Date.now() || [] },
-        { phone: huaweiCart, id: Date.now() || [] },
-        { phone: googlePixelCart, id: Date.now() || [] },
-        { phone: motorolaCart, id: Date.now() || [] },
-        { phone: nothingCart, id: Date.now() || [] },
-        { phone: redmiCart, id: Date.now() || [] },
-        { phone: iphonTapletCart, id: Date.now() || [] },
-        { phone: samsungTapletCart, id: Date.now() || [] },
-        { phone: appleLaptop, id: Date.now() || [] },
-        { phone: hPLaptop, id: Date.now() || [] },
-        { phone: watchapple, id: Date.now() || [] },
-        { phone: watchSamsung, id: Date.now() || [] },
-        { phone: KeyboardCart, id: Date.now() || [] },
-        { phone: MouseCart, id: Date.now() || [] }
 
-    ].filter(cart => cart.phone.length > 0)
+
+
+    let arrayCopy = [
+        { items: iphoneCart, id: Date.now() || [] },
+        { items: samsungCart, id: Date.now() || [] },
+        { items: huaweiCart, id: Date.now() || [] },
+        { items: googlePixelCart, id: Date.now() || [] },
+        { items: motorolaCart, id: Date.now() || [] },
+        { items: nothingCart, id: Date.now() || [] },
+        { items: redmiCart, id: Date.now() || [] },
+        { items: iphonTapletCart, id: Date.now() || [] },
+        { items: samsungTapletCart, id: Date.now() || [] },
+        { items: appleLaptop, id: Date.now() || [] },
+        { items: hPLaptop, id: Date.now() || [] },
+        { items: watchapple, id: Date.now() || [] },
+        { items: watchSamsung, id: Date.now() || [] },
+        { items: KeyboardCart, id: Date.now() || [] },
+        { items: MouseCart, id: Date.now() || [] }
+
+    ].filter(cart => cart.items.length > 0)
+
+
+    const totalOf = [
+
+        MouseCart, KeyboardCart, watchSamsung, watchapple, hPLaptop, appleLaptop, samsungTapletCart, iphonTapletCart, redmiCart, nothingCart, motorolaCart, googlePixelCart, huaweiCart, samsungCart, iphoneCart
+    ].flat().reduce((total, item) => {
+        const price = Number(item.price) || 0
+        const quantity = Number(item.quantity) || 1
+        return total + (price * quantity)
+    }, 0)
+
+
 
     const handleCheckOut = () => {
         setCartIphone([])
@@ -133,28 +148,31 @@ const CartPage = () => {
             </div>
 
             }
-
+            <div className='bg-black text-white w-full flex justify-between w-3xl rounded-md p-2 font-bold'>
+                <h2>Total</h2>
+                <p>৳{totalOf}</p>
+            </div>
             <div className='flex justify-center my-3'>
-                <div className='flex bg-white items-center px-2 border gap-1 py-3'>
+                <div className='flex bg-white items-center px-2 border gap-1 py-2'>
                     <Image className='' src='https://i.ibb.co.com/YFddC0mr/bkash-logo-mobile-banking-app-icon-transparent-background-free-png-removebg-preview.png' width={30} height={20} alt=''></Image>
                     <h2 className='font-semibold'>Bkash</h2>
                 </div>
-                <div className='flex bg-white items-center px-2 border gap-1 py-3'>
+                <div className='flex bg-white items-center px-2 border gap-1 py-2'>
                     <Image width={30} height={30} src={'https://i.ibb.co.com/6Knmw7v/images.png'} alt=''></Image>
                     <h2 className='font-semibold'>Nagad</h2>
                 </div>
 
-                <div className='flex bg-white items-center px-2 border gap-1 py-3'>
+                <div className='flex bg-white items-center px-2 border gap-1 py-2'>
                     <Image src={'https://i.ibb.co.com/yvX5RkC/dutch-bangla-rocket-logo-png-seeklogo-317692.png'} width={30} height={30} alt=''></Image>
                     <h2 className='font-semibold'>Rocket</h2>
                 </div>
-                <div className='flex bg-white items-center px-2 border gap-1 py-3'>
+                <div className='flex bg-white items-center px-2 border gap-1 py-2'>
                     <Image src={'https://i.ibb.co.com/4Rb6Xc7S/visa-payment-card1873.jpg'} width={30} height={30} alt=''></Image>
                     <h2 className='font-semibold'>Visa</h2>
                 </div>
 
             </div>
-            <Button onClick={handleCheckOut} variant='outline' className={'text-white bg-black w-full rounded-md'}>proceed to Checkout</Button>
+            <Button onClick={handleCheckOut} variant='outline' className={'text-white bg-black w-full rounded-md h-14 text-[17px] font-semibold'}>proceed to Checkout</Button>
         </div>
     );
 };

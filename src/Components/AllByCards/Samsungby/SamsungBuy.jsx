@@ -4,8 +4,8 @@ import Image from 'next/image';
 import React, { useContext } from 'react';
 import { toast } from 'react-toastify';
 
-const SamsungBuy = ({ samsung}) => {
-  const { samsungCart, setCartSamsung } = useContext(SamsungAddCart)
+const SamsungBuy = ({ samsung }) => {
+    const { samsungCart, setCartSamsung } = useContext(SamsungAddCart)
 
     const handleDeletBtn = () => {
         const filterarray = samsungCart.filter(sam => sam.id !== samsung.id)
@@ -14,16 +14,43 @@ const SamsungBuy = ({ samsung}) => {
     }
 
 
+    const handleQuantity = () => {
+        const updateQuantity = samsungCart.map(phone =>
+            phone.id === samsung.id ? {
+                ...phone, quantity: (phone.quantity || 1) + 1
+            } : phone
+        )
+        setCartSamsung(updateQuantity)
+    }
+    const handleQuantityMi = () => {
+        const updateQuantity = samsungCart.map(phone =>
+            phone.id === samsung.id && phone.quantity > 1 ? {
+                ...phone, quantity: phone.quantity - 1
+            } : phone
+        )
+        setCartSamsung(updateQuantity)
+    }
+
+
+
+
     return (
         <div className='bg-white px-5 flex items-center rounded-md shadow-md justify-between'>
             <div className='flex items-center'>
                 <Image src={samsung.img} height={120} width={120} alt='iphone'></Image>
                 <div>
                     <h1 className='font-semibold'>{samsung.model}</h1>
-                    <h3>{samsung.price}</h3>
+                    <h3>৳{samsung.price}</h3>
                 </div>
             </div>
-            <Button onClick={handleDeletBtn} variant='outline' className={'rounded-md'}>X</Button>
+            <div className='flex flex-col items-center gap-2'>
+                <Button onClick={handleDeletBtn} variant='outline' className={'rounded-md'}>X</Button>
+                <div className='flex items-center gap-2'>
+                    <Button className={' rounded-md font-bold'} variant='outline' onClick={handleQuantity}>+</Button>
+                    <p className='bg-neutral-300 px-2 rounded-md'>{samsung.quantity || 1}</p>
+                    <Button className={' rounded-md font-bold'} variant='outline' onClick={handleQuantityMi}>-</Button>
+                </div>
+            </div>
         </div>
     );
 };

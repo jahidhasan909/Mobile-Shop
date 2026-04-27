@@ -23,7 +23,7 @@ const MotorolaCard = ({ motorolas }) => {
                 <Card.Header className=' items-center  justify-center space-y-2'>
                     <img className='h-[200px]' src={motorolas.img} alt="" />
                     <Card.Title>{motorolas.model}</Card.Title>
-                    <Card.Title className='font-bold'>{motorolas.price}</Card.Title>
+                    <Card.Title className='font-bold'>৳{motorolas.price}</Card.Title>
                 </Card.Header>
                 <Card.Content >
                     <div className='flex gap-2 items-center justify-center'>

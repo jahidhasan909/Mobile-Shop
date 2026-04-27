@@ -13,6 +13,25 @@ const TabletSamsungBuy = ({ samtab }) => {
         toast.error(`${samtab.model} Removed`)
     }
 
+
+
+    const handleQuantity = () => {
+        const updateQuantity = samsungTapletCart.map(tablet =>
+            tablet.id === samtab.id ? {
+                ...tablet, quantity: (tablet.quantity || 1) + 1
+            } : tablet
+        )
+        setsamsungTabletCart(updateQuantity)
+    }
+    const handleQuantityMi = () => {
+        const updateQuantity = samsungTapletCart.map(tablet =>
+            tablet.id === samtab.id && tablet.quantity > 1 ? {
+                ...tablet, quantity: tablet.quantity - 1
+            } : tablet
+        )
+        setsamsungTabletCart(updateQuantity)
+    }
+
     return (
         <div>
             <div className='bg-white px-5 flex items-center rounded-md shadow-md justify-between'>
@@ -20,10 +39,17 @@ const TabletSamsungBuy = ({ samtab }) => {
                     <Image src={samtab.img} height={120} width={120} alt='iphone'></Image>
                     <div>
                         <h1 className='font-semibold'>{samtab.model}</h1>
-                        <h3>{samtab.price}</h3>
+                        <h3>৳{samtab.price}</h3>
                     </div>
                 </div>
-                <Button onClick={handleDeletBtn} variant='outline' className={'rounded-md'}>X</Button>
+                <div className='flex flex-col items-center gap-2'>
+                    <Button onClick={handleDeletBtn} variant='outline' className={'rounded-md'}>X</Button>
+                    <div className='flex items-center gap-2'>
+                        <Button className={' rounded-md font-bold'} variant='outline' onClick={handleQuantity}>+</Button>
+                        <p className='bg-neutral-300 px-2 rounded-md'>{samtab.quantity || 1}</p>
+                        <Button className={' rounded-md font-bold'} variant='outline' onClick={handleQuantityMi}>-</Button>
+                    </div>
+                </div>
             </div>
         </div>
     );

@@ -24,7 +24,7 @@ const TapIphoneCard = ({ iphonetaps }) => {
                 <Card.Header className=' items-center  justify-center space-y-2'>
                     <img className='h-[200px]' src={iphonetaps.img} alt="" />
                     <Card.Title>{iphonetaps.model}</Card.Title>
-                    <Card.Title className='font-bold'>{iphonetaps.price}</Card.Title>
+                    <Card.Title className='font-bold'>৳{iphonetaps.price}</Card.Title>
                 </Card.Header>
                 <Card.Content >
                     <div className='flex gap-2 items-center justify-center'>

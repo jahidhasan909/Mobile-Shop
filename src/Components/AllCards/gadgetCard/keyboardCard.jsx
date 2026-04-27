@@ -23,7 +23,7 @@ const KeyboardCard = ({ keyboards }) => {
                 <Card.Header className=' items-center  justify-center space-y-2'>
                     <img className='h-[200px]' src={keyboards.img} alt="" />
                     <Card.Title className='line-clamp-1'>{keyboards.model}</Card.Title>
-                    <Card.Title className='font-bold'>{keyboards.price}</Card.Title>
+                    <Card.Title className='font-bold'>৳{keyboards.price}</Card.Title>
                 </Card.Header>
                 <Card.Content >
                     <div className='flex gap-2 items-center justify-center'>
