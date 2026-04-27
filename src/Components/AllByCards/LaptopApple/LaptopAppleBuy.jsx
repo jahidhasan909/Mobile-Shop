@@ -1,4 +1,4 @@
-import { LaptopApple, MotorolaAddCart } from '@/context/ContextPages';
+import { LaptopApple} from '@/context/ContextPages';
 import { Button } from '@heroui/react';
 import Image from 'next/image';
 import React, { useContext } from 'react';

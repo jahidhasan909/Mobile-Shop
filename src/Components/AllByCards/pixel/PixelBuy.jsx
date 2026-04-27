@@ -1,4 +1,4 @@
-import { GooglePixelAddCart, IphoneAddCart } from '@/context/ContextPages';
+import { GooglePixelAddCart } from '@/context/ContextPages';
 import { Button } from '@heroui/react';
 import Image from 'next/image';
 import React, { useContext } from 'react';

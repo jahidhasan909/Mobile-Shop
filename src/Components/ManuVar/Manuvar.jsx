@@ -7,7 +7,7 @@ import { IoWatchOutline } from "react-icons/io5";
 import React from 'react';
 
 import { LogoAcrobat, ShoppingCart, Smartphone } from "@gravity-ui/icons";
-import { FaTv } from "react-icons/fa";
+
 
 import Link from "next/link";
 

@@ -1,4 +1,4 @@
-import { CircleFill, Firewall, Flame } from "@gravity-ui/icons";
+import { Flame } from "@gravity-ui/icons";
 import { Button, Card, Chip } from "@heroui/react";
 
 

@@ -1,5 +1,5 @@
 
-import { IphoneTabletCart, SamsungTabletCart, WatchAppleAdded } from '@/context/ContextPages';
+import {  WatchAppleAdded } from '@/context/ContextPages';
 import { Button } from '@heroui/react';
 import Image from 'next/image';
 import React, { useContext } from 'react';

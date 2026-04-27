@@ -1,4 +1,4 @@
-import { IphoneAddCart, SamsungAddCart } from '@/context/ContextPages';
+import { SamsungAddCart } from '@/context/ContextPages';
 import { Button } from '@heroui/react';
 import Image from 'next/image';
 import React, { useContext } from 'react';

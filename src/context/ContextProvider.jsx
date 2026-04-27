@@ -1,9 +1,7 @@
 "use client"
 import React, { useEffect, useState } from 'react';
 import { GooglePixelAddCart, HuaweiAddCart, IphoneAddCart, IphoneTabletCart, KeyboardAddedCart, LaptopApple, LaptopHPAdded, MotorolaAddCart, MouseAddedCart, NothingAddCart, RedmiAddCart, SamsungAddCart, SamsungTabletCart, WatchAppleAdded, WatchSamsungAdded } from './ContextPages';
-import HpLaptop from '@/app/laptop/hp/page';
-import HpLaptopCard from '@/Components/AllCards/laptopCard/HpLaptopCard';
-import { Watch } from 'react-hook-form';
+
 
 
 const ContextProvider = ({ children }) => {

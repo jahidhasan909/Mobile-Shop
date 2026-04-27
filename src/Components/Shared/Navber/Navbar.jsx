@@ -1,7 +1,7 @@
 "use client"
 import { ThemeSwitch } from "@/Components/ThemeSwitch";
 import { signOut, useSession } from "@/lib/auth-client";
-import { ShoppingCart } from "@gravity-ui/icons";
+
 import { Button, SearchField } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
