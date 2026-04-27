@@ -4,13 +4,10 @@ import Link from 'next/link';
 import React from 'react';
 
 
-export const metadata = {
-    title: 'error',
-    description: 'error page',
-}
 
 
-const error = () => {
+
+export default function NotFound() {
     return (
         <div>
             <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-center px-4">
@@ -36,4 +33,3 @@ const error = () => {
     );
 };
 
-export default error;
