@@ -1,6 +1,20 @@
+"use client"
+import { KeyboardAddedCart } from '@/context/ContextPages';
 import { Button, Card } from '@heroui/react';
+import { useContext, useState } from 'react';
+import { toast } from 'react-toastify';
 
 const KeyboardCard = ({ keyboards }) => {
+
+
+    const { KeyboardCart, setKeyboardCart } = useContext(KeyboardAddedCart)
+    const [clickCart, setClick] = useState(false)
+
+    const handleAddedKeyboardCart = () => {
+        setKeyboardCart([...KeyboardCart, keyboards])
+        toast.success(`${keyboards.model} Add Cart Successful`)
+        setClick(true)
+    }
 
 
     return (
@@ -14,7 +28,7 @@ const KeyboardCard = ({ keyboards }) => {
                 <Card.Content >
                     <div className='flex gap-2 items-center justify-center'>
                         <Button className=' rounded-md w-full' variant='outline'>View</Button>
-                        <Button className='rounded-md w-full bg-black text-white' variant='outline'>Add To Cart !</Button>
+                        <Button isDisabled={clickCart ? true : false} onClick={handleAddedKeyboardCart} className='rounded-md w-full bg-black text-white' variant='outline'>Add To Cart !</Button>
                     </div>
                 </Card.Content>
             </Card>

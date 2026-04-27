@@ -1,9 +1,11 @@
 'use client'
 import HuaweiBuy from '@/Components/AllByCards/huaweiby/Huaweibuy';
 import IphoneBuy from '@/Components/AllByCards/IphoneBy/IphoneBuy';
+import KeyboardBuy from '@/Components/AllByCards/Keyboardby/KeyboardBuy';
 import LaptopAppleBuy from '@/Components/AllByCards/LaptopApple/LaptopAppleBuy';
 import LaptopHpBuy from '@/Components/AllByCards/LaptopHp/LaptopHpBuy';
 import MotorolaBuy from '@/Components/AllByCards/motorolaby/MotorolaBuy';
+import MouseBuy from '@/Components/AllByCards/Mouseby/MouseBuy';
 import NothingBuy from '@/Components/AllByCards/nothingby/NothingBuy';
 import PixelBuy from '@/Components/AllByCards/pixel/PixelBuy';
 import RedmiBuy from '@/Components/AllByCards/redmiby/RedmiBuy';
@@ -12,7 +14,7 @@ import TabletIphoneBuy from '@/Components/AllByCards/TabletIphoneBuy/TabletIphon
 import TabletSamsungBuy from '@/Components/AllByCards/TabletSamsung/TabletSamsung';
 import WatchApple from '@/Components/AllByCards/WatchAppleby/WatchAppleBuy';
 import WatchBuySamsung from '@/Components/AllByCards/WatchSamsungby/WatchSamungBuy';
-import { GooglePixelAddCart, HuaweiAddCart, IphoneAddCart, IphoneTabletCart, LaptopApple, LaptopHPAdded, MotorolaAddCart, NothingAddCart, RedmiAddCart, SamsungAddCart, SamsungTabletCart, WatchAppleAdded, WatchSamsungAdded } from '@/context/ContextPages';
+import { GooglePixelAddCart, HuaweiAddCart, IphoneAddCart, IphoneTabletCart, KeyboardAddedCart, LaptopApple, LaptopHPAdded, MotorolaAddCart, MouseAddedCart, NothingAddCart, RedmiAddCart, SamsungAddCart, SamsungTabletCart, WatchAppleAdded, WatchSamsungAdded } from '@/context/ContextPages';
 import { Button } from '@heroui/react';
 import Image from 'next/image';
 import React, { useContext } from 'react';
@@ -34,6 +36,8 @@ const CartPage = () => {
     const { hPLaptop, setHpLaptop } = useContext(LaptopHPAdded)
     const { watchapple, setAppleWatchCart } = useContext(WatchAppleAdded)
     const { watchSamsung, setSamsungWatchCart } = useContext(WatchSamsungAdded)
+    const { KeyboardCart, setKeyboardCart } = useContext(KeyboardAddedCart)
+    const { MouseCart, setMouseCart } = useContext(MouseAddedCart)
 
 
 
@@ -50,7 +54,10 @@ const CartPage = () => {
         { phone: appleLaptop, id: Date.now() || [] },
         { phone: hPLaptop, id: Date.now() || [] },
         { phone: watchapple, id: Date.now() || [] },
-        { phone: watchSamsung, id: Date.now() || [] }
+        { phone: watchSamsung, id: Date.now() || [] },
+        { phone: KeyboardCart, id: Date.now() || [] },
+        { phone: MouseCart, id: Date.now() || [] }
+
     ].filter(cart => cart.phone.length > 0)
 
     const handleCheckOut = () => {
@@ -67,6 +74,8 @@ const CartPage = () => {
         setHpLaptop([])
         setAppleWatchCart([])
         setSamsungWatchCart([])
+        setKeyboardCart([])
+        setMouseCart([])
         toast.success('proceed to Checkout successful')
     }
 
@@ -115,11 +124,36 @@ const CartPage = () => {
                 {
                     watchSamsung.map(watchsSamung => <WatchBuySamsung key={watchsSamung.id} watchsSamung={watchsSamung}></WatchBuySamsung>)
                 }
+                {
+                    KeyboardCart.map(keyboards => <KeyboardBuy key={keyboards.id} keyboards={keyboards}></KeyboardBuy>)
+                }
+                {
+                    MouseCart.map(mouses => <MouseBuy key={mouses.id} mouses={mouses}></MouseBuy>)
+                }
             </div>
 
             }
 
+            <div className='flex justify-center my-3'>
+                <div className='flex bg-white items-center px-2 border gap-1 py-3'>
+                    <Image className='' src='https://i.ibb.co.com/YFddC0mr/bkash-logo-mobile-banking-app-icon-transparent-background-free-png-removebg-preview.png' width={30} height={20} alt=''></Image>
+                    <h2 className='font-semibold'>Bkash</h2>
+                </div>
+                <div className='flex bg-white items-center px-2 border gap-1 py-3'>
+                    <Image width={30} height={30} src={'https://i.ibb.co.com/6Knmw7v/images.png'} alt=''></Image>
+                    <h2 className='font-semibold'>Nagad</h2>
+                </div>
 
+                <div className='flex bg-white items-center px-2 border gap-1 py-3'>
+                    <Image src={'https://i.ibb.co.com/yvX5RkC/dutch-bangla-rocket-logo-png-seeklogo-317692.png'} width={30} height={30} alt=''></Image>
+                    <h2 className='font-semibold'>Rocket</h2>
+                </div>
+                <div className='flex bg-white items-center px-2 border gap-1 py-3'>
+                    <Image src={'https://i.ibb.co.com/4Rb6Xc7S/visa-payment-card1873.jpg'} width={30} height={30} alt=''></Image>
+                    <h2 className='font-semibold'>Visa</h2>
+                </div>
+
+            </div>
             <Button onClick={handleCheckOut} variant='outline' className={'text-white bg-black w-full rounded-md'}>proceed to Checkout</Button>
         </div>
     );
