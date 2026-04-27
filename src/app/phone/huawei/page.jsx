@@ -1,44 +1,44 @@
-import HuaweiCard from "@/Components/AllCards/HuaweiCard";
+// import HuaweiCard from "@/Components/AllCards/HuaweiCard";
 
-import { House } from "@gravity-ui/icons";
-import { Button } from "@heroui/react";
-
-
-
-export const metadata = {
-    title: 'Huawei Phone',
-    description: '...',
-}
+// import { House } from "@gravity-ui/icons";
+// import { Button } from "@heroui/react";
 
 
-const HuaweiPage = async () => {
-    const data = await fetch("https://mobile-shop-git-main-jahidhasan909s-projects.vercel.app/data.json")
-    const res = await data.json()
-    const huawei = res.phone.huawei
 
-    return (
-        <div className="container mx-auto my-10">
-            <p className="py-3 flex items-center gap-1"> <House></House> / Products / Categories / phones</p>
-            <div className="bg-white p-5 rounded-md my-4">
-                <Button className="bg-black text-white" variant="outline">Huawei</Button>
-            </div>
-            <div className="flex justify-between items-center gap-3">
-                <div className="bg-neutral-200 w-full p-4 rounded-md">
-                    <h3>Products of phones</h3>
-                </div>
+// export const metadata = {
+//     title: 'Huawei Phone',
+//     description: '...',
+// }
+
+
+// const HuaweiPage = async () => {
+//     const data = await fetch("https://mobile-shop-git-main-jahidhasan909s-projects.vercel.app/data.json")
+//     const res = await data.json()
+//     const huawei = res.phone.huawei
+
+//     return (
+//         <div className="container mx-auto my-10">
+//             <p className="py-3 flex items-center gap-1"> <House></House> / Products / Categories / phones</p>
+//             <div className="bg-white p-5 rounded-md my-4">
+//                 <Button className="bg-black text-white" variant="outline">Huawei</Button>
+//             </div>
+//             <div className="flex justify-between items-center gap-3">
+//                 <div className="bg-neutral-200 w-full p-4 rounded-md">
+//                     <h3>Products of phones</h3>
+//                 </div>
 
                 
 
-            </div>
+//             </div>
 
 
-            <div className="grid grid-cols-4 gap-3 my-5">
-                {
-                    huawei.map(huaweis => <HuaweiCard key={huaweis.id} huaweis={huaweis}></HuaweiCard>)
-                }
-            </div>
-        </div>
-    );
-};
+//             <div className="grid grid-cols-4 gap-3 my-5">
+//                 {
+//                     huawei.map(huaweis => <HuaweiCard key={huaweis.id} huaweis={huaweis}></HuaweiCard>)
+//                 }
+//             </div>
+//         </div>
+//     );
+// };
 
-export default HuaweiPage;
+// export default HuaweiPage;
