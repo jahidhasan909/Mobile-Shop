@@ -41,7 +41,7 @@ const Navbar = () => {
             <nav className="sticky top-0 z-40  container mx-auto">
                 <header className="flex h-20 items-center justify-between px-6">
                     <div className="flex items-center relative">
-                        <Link href='/'> <p className="font-bold text-4xl animate-pulse " >dazzle</p></Link>
+                        <Link href='/'> <p className="font-bold text-4xl animate-pulse " >Jazzdle</p></Link>
                     </div>
 
                     <div className="">

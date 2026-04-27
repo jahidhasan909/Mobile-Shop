@@ -12,7 +12,7 @@ export const metadata = {
 
 
 const HuaweiPage = async () => {
-    const data = await fetch("https://mobile-shop-ju0niybvj-jahidhasan909s-projects.vercel.app/.json")
+    const data = await fetch("https://mobile-shop-git-main-jahidhasan909s-projects.vercel.app/data.json")
     const res = await data.json()
     const huawei = res.phone.huawei
 

@@ -1,5 +1,5 @@
 import SamsungWatchCrad from '@/Components/AllCards/watchCard/SamsungWatchCrad';
-import WatchSamsungDrop from '@/Components/DropDownInner/WatchDrop/WatchSamsungDrop';
+
 import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
@@ -17,7 +17,7 @@ export const metadata = {
 const SamsungWatchPage = async () => {
 
 
-    const data = await fetch("https://mobile-shop-ju0niybvj-jahidhasan909s-projects.vercel.app//data.json")
+    const data = await fetch("https://mobile-shop-git-main-jahidhasan909s-projects.vercel.app/data.json")
     const res = await data.json()
     const samsungwatch = res.watch.samsungWatch
 

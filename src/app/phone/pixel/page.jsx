@@ -15,7 +15,7 @@ export const metadata = {
 
 
 const page = async() => {
-    const data = await fetch("https://mobile-shop-ju0niybvj-jahidhasan909s-projects.vercel.app/.json")
+    const data = await fetch("https://mobile-shop-git-main-jahidhasan909s-projects.vercel.app/data.json")
     const res = await data.json()
     const pixel = res.phone.pixel
     return (

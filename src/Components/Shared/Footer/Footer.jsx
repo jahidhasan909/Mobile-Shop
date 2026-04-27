@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="bg-black text-white">
             <footer className="grid grid-cols-5 container mx-auto p-20">
                 <aside className="space-y-3">
-                    <h1 className="text-5xl animate-pulse font-bold">dazzle</h1>
+                    <h1 className="text-5xl animate-pulse font-bold">Jazzdle</h1>
                     <Button className='text-white rounded' variant="outline"><LocationArrow></LocationArrow> Store Location</Button>
                     <div className="flex items-center gap-2">
                         <LogoFacebook></LogoFacebook>

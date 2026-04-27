@@ -14,7 +14,7 @@ export const metadata = {
 
 
 const MotorolaPage = async () => {
-    const data = await fetch("https://mobile-shop-ju0niybvj-jahidhasan909s-projects.vercel.app/.json")
+    const data = await fetch("https://mobile-shop-git-main-jahidhasan909s-projects.vercel.app/data.json")
     const res = await data.json()
     const motorola = res.phone.motorola
     return (
