@@ -1,5 +1,5 @@
 import NothingCard from '@/Components/AllCards/NothingCard';
-import NothingDropDown from '@/Components/DropDownInner/NothingDropDown';
+
 import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
@@ -29,7 +29,7 @@ const NothingPage = async () => {
                         <h3>Products of phones</h3>
                     </div>
 
-                    <NothingDropDown></NothingDropDown>
+                 
 
                 </div>
 

@@ -53,8 +53,8 @@ const PhonePage = async () => {
                 {motorola.map(motorolas => <MotorolaCard key={motorolas.id} motorolas={motorolas}></MotorolaCard>)}
                 {nothing.map(nothings => <NothingCard key={nothings.id} nothings={nothings}></NothingCard>)}
                 {pixel.map(pixels => <PixelCard key={pixels.id} pixels={pixels}></PixelCard>)}
-                 {redmi.map(redmis => <RedmiCard key={redmis.id} redmis={redmis}></RedmiCard>)}
-                  {
+                {redmi.map(redmis => <RedmiCard key={redmis.id} redmis={redmis}></RedmiCard>)}
+                {
                     samsung.map(samsungs => <SamsungCard key={samsungs.id} samsungs={samsungs}></SamsungCard>)
                 }
             </div>

@@ -1,5 +1,5 @@
 import HuaweiCard from "@/Components/AllCards/HuaweiCard";
-import HuaweiDropDown from "@/Components/DropDownInner/HuaweiDropDown";
+
 import { House } from "@gravity-ui/icons";
 import { Button } from "@heroui/react";
 
@@ -27,7 +27,7 @@ const HuaweiPage = async () => {
                     <h3>Products of phones</h3>
                 </div>
 
-                <HuaweiDropDown></HuaweiDropDown>
+                
 
             </div>
 

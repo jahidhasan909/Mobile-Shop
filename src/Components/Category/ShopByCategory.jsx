@@ -9,7 +9,7 @@ const ShopByCategory = () => {
 
 
 
-            <div className="grid grid-cols-6 gap-2 mx-auto ">
+            <div className="grid grid-cols-5 gap-2 mx-auto ">
                 <Link href='/categoreyby/phone'>
                     <Card className=" rounded hover:cursor-pointer hover:shadow-md hover:translate-0.5 hover:shadow-gray-500" variant="tertiary">
                         <Card.Content>
@@ -25,7 +25,7 @@ const ShopByCategory = () => {
                 <Link href='/categoreyby/tablet'>
                     <Card className=" rounded hover:cursor-pointer hover:shadow-md hover:translate-0.5 hover:shadow-gray-500" variant="tertiary">
                         <Card.Content>
-                            <img className="h-[200px]" src="https://i.ibb.co.com/TXVkqLN/Apple-i-Pad-Pro-M5-13-inch-price-in-Bangladesh-MC-Solution-BD-removebg-preview.png" alt="" />
+                            <img className="h-[200px] object-contain" src="https://i.ibb.co.com/TXVkqLN/Apple-i-Pad-Pro-M5-13-inch-price-in-Bangladesh-MC-Solution-BD-removebg-preview.png" alt="" />
                         </Card.Content>
                         <Card.Header>
                             <Card.Title className="text-center">Tablet</Card.Title>
@@ -71,17 +71,6 @@ const ShopByCategory = () => {
                 </Link>
 
 
-
-                <Link href='/categoreyby/tv'>
-                    <Card className="rounded hover:cursor-pointer hover:shadow-md hover:translate-0.5 hover:shadow-gray-500" variant="tertiary">
-                        <Card.Content>
-                            <img className="h-[200px] object-contain" src="https://i.ibb.co.com/B2s1r4HB/Apple-TV-4-K-hero-221018-big-jpg-large-removebg-preview.png" alt="" />
-                        </Card.Content>
-                        <Card.Header>
-                            <Card.Title className="text-center font-bold">Smart Tv</Card.Title>
-                        </Card.Header>
-                    </Card>
-                </Link>
 
             </div>
 

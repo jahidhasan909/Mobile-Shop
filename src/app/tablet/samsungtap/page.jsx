@@ -30,7 +30,7 @@ const SamsungTab = async () => {
                         <div className="bg-neutral-200 w-full p-4 rounded-md">
                             <h3>Products of Tablet</h3>
                         </div>
-                        <Tapdropsamsung></Tapdropsamsung>
+                        
                     </div>
 
                     <div className="grid grid-cols-4 gap-4 my-5">

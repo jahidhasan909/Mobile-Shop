@@ -27,7 +27,7 @@ const IphoneTapPage = async () => {
                     <div className="bg-neutral-200 w-full p-4 rounded-md">
                         <h3>Products of Tablet</h3>
                     </div>
-                    <TapIphoneDrop></TapIphoneDrop>
+                    
 
                 </div>
 

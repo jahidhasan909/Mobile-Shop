@@ -30,7 +30,7 @@ const AppleWatchPage = async() => {
                         <h3>Products of Watch</h3>
                     </div>
                    
-                   <WatchDropApple></WatchDropApple>
+              
 
                 </div>
 

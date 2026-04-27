@@ -5,16 +5,23 @@ import { ShoppingCart } from "@gravity-ui/icons";
 import { Button, SearchField } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
+import { useState } from "react";
+
 
 
 
 import { HashLoader } from "react-spinners";
+import OverlayPage from "../OverlayPage/OverlayPage";
+
 
 
 const Navbar = () => {
 
 
     const { data, isPending } = useSession()
+    const [openOverlay, setOpenOverlay] = useState(false)
+
+
 
     const user = data?.user
 
@@ -24,7 +31,7 @@ const Navbar = () => {
         </div>
     }
     console.log(user);
-   
+
 
 
 
@@ -37,14 +44,20 @@ const Navbar = () => {
                         <Link href='/'> <p className="font-bold text-4xl animate-pulse " >dazzle</p></Link>
                     </div>
 
-                    <SearchField name="search">
-                        <SearchField.Group className='bg-white rounded'>
-                            <SearchField.SearchIcon />
-                            <SearchField.Input className="w-[300px] text-neutral-900" placeholder="Search..." />
-                            <SearchField.ClearButton />
-                        </SearchField.Group>
-                    </SearchField>
+                    <div className="">
+                        <SearchField name="search" onClick={() => setOpenOverlay(true)}>
+                            <SearchField.Group className='bg-white rounded'>
+                                <SearchField.SearchIcon />
+                                <SearchField.Input className="w-[300px] text-neutral-900" placeholder="Search..." />
+                                <SearchField.ClearButton />
+                            </SearchField.Group>
+                        </SearchField>
 
+
+                        <div>
+
+                        </div>
+                    </div>
 
                     <ul className="flex items-center gap-4">
                         <li><ThemeSwitch></ThemeSwitch></li>
@@ -61,7 +74,9 @@ const Navbar = () => {
                     </ul>
 
                 </header>
+
             </nav>
+            {openOverlay && <OverlayPage closeOverlay={() => setOpenOverlay(false)} ></OverlayPage>}
         </div>
     );
 };

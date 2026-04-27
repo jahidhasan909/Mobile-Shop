@@ -1,5 +1,5 @@
 import MotorolaCard from '@/Components/AllCards/MotorolaCard';
-import MotoroloDropDown from '@/Components/DropDownInner/MotoroloDropDown';
+
 import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
@@ -28,7 +28,7 @@ const MotorolaPage = async () => {
                     <h3>Products of phones</h3>
                 </div>
 
-                <MotoroloDropDown></MotoroloDropDown>
+               
 
             </div>
 

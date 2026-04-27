@@ -32,7 +32,7 @@ const SamsungWatchPage = async () => {
                     <div className="bg-neutral-200 w-full p-4 rounded-md">
                         <h3>Products of Watch</h3>
                     </div>
-                    <WatchSamsungDrop></WatchSamsungDrop>
+                    
 
                 </div>
 

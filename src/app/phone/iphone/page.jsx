@@ -1,5 +1,5 @@
 import CardIphone from "@/Components/AllCards/CardIphone";
-import InnerDropDown from "@/Components/DropDownInner/InnerDropDown";
+
 import { House } from "@gravity-ui/icons";
 import { Button } from "@heroui/react";
 
@@ -26,7 +26,7 @@ const IphonePage = async () => {
                     <h3>Products of phones</h3>
                 </div>
 
-                <InnerDropDown></InnerDropDown>
+               
 
             </div>
 

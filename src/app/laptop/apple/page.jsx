@@ -1,5 +1,5 @@
 import AppleLaptopCard from '@/Components/AllCards/laptopCard/AppleLaptopCard';
-import AppleLapDrop from '@/Components/DropDownInner/LaptopDrop/AppleLapDrop';
+
 import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
@@ -28,7 +28,7 @@ const AppleLaptop = async () => {
                     <h3>Products of Laptop</h3>
                 </div>
 
-               <AppleLapDrop></AppleLapDrop>
+              
 
             </div>
 

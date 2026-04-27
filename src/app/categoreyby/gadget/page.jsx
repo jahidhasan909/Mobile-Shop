@@ -1,4 +1,4 @@
-import Airpods from '@/Components/AllCards/gadgetCard/Airpods';
+
 import KeyboardCard from '@/Components/AllCards/gadgetCard/keyboardCard';
 import MouseCard from '@/Components/AllCards/gadgetCard/MouseCard';
 import { Button } from '@heroui/react';
@@ -17,7 +17,6 @@ export const metadata = {
 const AllGadget = async () => {
     const data = await fetch("http://localhost:3000/data.json")
     const res = await data.json()
-    const airpod = res.gadget.airpods
     const keyboard = res.gadget.keyboard
     const mouse = res.gadget.mouse
     return (
@@ -34,9 +33,7 @@ const AllGadget = async () => {
 
 
                 <div className="grid grid-cols-4 gap-3 my-5">
-                    {
-                        airpod.map(airpods => <Airpods key={airpods.id} airpods={airpods}></Airpods>)
-                    }
+    
                     {
                         keyboard.map(keyboards => <KeyboardCard key={keyboards.id} keyboards={keyboards}></KeyboardCard>)
                     }

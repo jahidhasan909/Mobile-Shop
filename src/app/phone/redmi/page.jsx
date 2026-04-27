@@ -1,5 +1,5 @@
 import RedmiCard from '@/Components/AllCards/RedmiCard';
-import RedmiDropDown from '@/Components/DropDownInner/RedmiDropDown';
+
 import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
@@ -30,7 +30,7 @@ const Redmipage = async () => {
                         <h3>Products of phones</h3>
                     </div>
 
-                    <RedmiDropDown></RedmiDropDown>
+                 
                 </div>
 
                 <div className="grid grid-cols-4 gap-4 my-5">

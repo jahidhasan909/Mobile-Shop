@@ -1,5 +1,5 @@
 import PixelCard from '@/Components/AllCards/PixelCard';
-import PixelDrop from '@/Components/DropDownInner/PixelDrop';
+
 import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
@@ -31,7 +31,7 @@ const page = async() => {
                         <h3>Products of phones</h3>
                     </div>
 
-                    <PixelDrop></PixelDrop>
+                    
 
                 </div>
 

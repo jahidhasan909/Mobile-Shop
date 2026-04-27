@@ -37,7 +37,7 @@ const SingUpPage = () => {
         if (res) {
             toast.success("Sign up successful! Please check your email to verify your account.");
         }
-        console.log('mongodb data img', { data, error });
+        
 
 
     };

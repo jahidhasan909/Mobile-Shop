@@ -16,7 +16,7 @@ export default function ImageSlider() {
                 disableOnInteraction: false,
             }}
             loop={true}
-            className="w-[770px] h-[600px]"
+            className="w-[770px] h-[600px] z-0"
         >
             <SwiperSlide>
                 <img src="https://i.ibb.co.com/FMTFGJ0/IPHONE-17-seriesv5.jpg" className="h-[600px] w-full rounded" />
