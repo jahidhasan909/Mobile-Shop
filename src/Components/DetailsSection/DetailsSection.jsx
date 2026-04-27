@@ -2,7 +2,7 @@
 
 const DetailsSection = () => {
     return (
-        <div className="bg-neutral-200">
+        <div className="bg-neutral-200 text-black">
             <div className="container mx-auto py-20 space-y-5">
                 <div className="space-y-3">
                     <h1 className="text-2xl font-bold">Dazzle - The Best Smartphone Shop in Bangladesh</h1>

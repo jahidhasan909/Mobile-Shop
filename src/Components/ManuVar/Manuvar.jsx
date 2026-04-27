@@ -14,7 +14,7 @@ import Link from "next/link";
 const Manuvar = () => {
     return (
         <div className="bg-white shadow-sm">
-            <div className="flex justify-around items-center container mx-auto py-4 px-6">
+            <div className="flex justify-around items-center container mx-auto py-4 px-6 text-black">
 
 
 
@@ -55,7 +55,7 @@ const Manuvar = () => {
                         <ul className='flex flex-col w-[120px] p-5 space-y-2'>
                             <li><Link className="hover:bg-neutral-300 hover:p-2 hover:rounded-md" href='/laptop/apple'>Apple</Link></li>
                             <li><Link className="hover:bg-neutral-300 hover:p-2 hover:rounded-md" href='/laptop/hp'>Hp</Link></li>
-                         
+
                         </ul>
                     </div>
                 </div>

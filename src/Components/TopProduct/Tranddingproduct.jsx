@@ -4,11 +4,11 @@ import { Button, Card, Chip } from "@heroui/react";
 
 const Tranddingproduct = () => {
     return (
-        <div className="container mx-auto my-15">
+        <div className="container mx-auto my-15 text-black">
             <h1 className="text-xl font-bold py-4">Trending Products</h1>
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-4 text-black">
                 <div className="grid grid-cols-2 gap-4">
-                    <Card className=" rounded bg-white" variant="tertiary">
+                    <Card className=" rounded bg-white text-black" variant="tertiary">
                         <Card.Content>
                             <img src="https://i.ibb.co.com/Rk4bmbfZ/Apple-Watch-SE-3-Price-in-Bangladesh-Midnight-removebg-preview.png" alt="" />
                         </Card.Content>

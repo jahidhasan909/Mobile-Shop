@@ -6,7 +6,7 @@ import { FaRegCalendar } from "react-icons/fa";
 import { BookmarkFill } from "@gravity-ui/icons";
 const MiniBanner = () => {
     return (
-        <div className="container bg-neutral-200 py-10 rounded-sm  mx-auto flex justify-center gap-7 my-10">
+        <div className="container bg-neutral-200 py-10 text-black rounded-sm  mx-auto flex justify-center gap-7 my-10">
 
             <div className="flex items-center gap-1">
                 <span className="text-green-700"> <CiBookmarkCheck /></span>
