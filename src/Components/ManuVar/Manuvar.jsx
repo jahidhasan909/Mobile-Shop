@@ -77,7 +77,6 @@ const Manuvar = () => {
                     <button className="flex items-center gap-1 hover:cursor-pointer"> <LogoAcrobat></LogoAcrobat> GADGET</button>
                     <div className='absolute hidden rounded-md shadow-md top-full group-hover:block bg-white left-0 z-50'>
                         <ul className='flex flex-col w-[120px] p-5 space-y-2'>
-                            <li><Link className="hover:bg-neutral-300 hover:p-2 hover:rounded-md" href='/gadget/airpods'>Airpods</Link></li>
                             <li><Link className="hover:bg-neutral-300 hover:p-2 hover:rounded-md" href='/gadget/keyboard'>keyboard</Link></li>
                             <li><Link className="hover:bg-neutral-300 hover:p-2 hover:rounded-md" href='/gadget/mouse'>Mouse</Link></li>
                         </ul>

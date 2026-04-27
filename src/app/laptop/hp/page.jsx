@@ -6,12 +6,6 @@ import React from 'react';
 
 
 
-export const metadata = {
-    title: 'HP Laptop',
-    description: '...',
-}
-
-
 
 
 const HpLaptop = async () => {
