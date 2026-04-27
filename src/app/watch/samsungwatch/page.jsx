@@ -17,7 +17,7 @@ export const metadata = {
 const SamsungWatchPage = async () => {
 
 
-    const data = await fetch("http://localhost:3000/data.json")
+    const data = await fetch("https://mobile-shop-ju0niybvj-jahidhasan909s-projects.vercel.app//data.json")
     const res = await data.json()
     const samsungwatch = res.watch.samsungWatch
 

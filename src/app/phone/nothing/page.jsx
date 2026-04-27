@@ -14,7 +14,7 @@ export const metadata = {
 
 
 const NothingPage = async () => {
-    const data = await fetch("http://localhost:3000/data.json")
+    const data = await fetch("https://mobile-shop-ju0niybvj-jahidhasan909s-projects.vercel.app/.json")
     const res = await data.json()
     const nothing = res.phone.nothing
     return (

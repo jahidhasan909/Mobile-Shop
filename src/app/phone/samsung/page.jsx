@@ -1,5 +1,5 @@
 import SamsungCard from '@/Components/AllCards/SamsungCard';
-import SamsungDropDown from '@/Components/DropDownInner/SamsungDropDown';
+
 import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
@@ -17,7 +17,7 @@ export const metadata = {
 
 const SamsungPage = async () => {
 
-    const data = await fetch("http://localhost:3000/data.json")
+    const data = await fetch("https://mobile-shop-ju0niybvj-jahidhasan909s-projects.vercel.app/.json")
     const res = await data.json()
     const samsung = res.phone.samsung
 
@@ -32,8 +32,7 @@ const SamsungPage = async () => {
                     <h3>Products of phones</h3>
                 </div>
 
-                <SamsungDropDown></SamsungDropDown>
-
+                
             </div>
             <div className=' grid grid-cols-4 my-5 gap-4'>
 
