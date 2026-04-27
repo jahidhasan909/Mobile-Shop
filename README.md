@@ -27,7 +27,10 @@ Checkout button → clears all cart items
 Cart data is saved in Local Storage
 
 Technologies Used:
+
 Next.js
+Better-Auth
+MongoDB
 Tailwind CSS
 HeroUI
 Swiper.js
