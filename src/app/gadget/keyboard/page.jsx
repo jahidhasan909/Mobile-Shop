@@ -1,5 +1,5 @@
 import KeyboardCard from '@/Components/AllCards/gadgetCard/keyboardCard';
-import KeyboardDrop from '@/Components/DropDownInner/gadgetDrop/keyboardDrop';
+
 import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
@@ -30,7 +30,7 @@ const keyBoardpage = async() => {
                     <h3>Products of Keyboard</h3>
                 </div>
 
-                <KeyboardDrop></KeyboardDrop>
+                
             </div>
 
 

@@ -1,7 +1,7 @@
 import AppleLaptopCard from '@/Components/AllCards/laptopCard/AppleLaptopCard';
-import AsusLaptopCard from '@/Components/AllCards/laptopCard/AsusLaptop';
+
 import HpLaptopCard from '@/Components/AllCards/laptopCard/HpLaptopCard';
-import HuaweiLaptopCard from '@/Components/AllCards/laptopCard/HuaweiLaptopCard';
+
 import { Button } from '@heroui/react';
 import React from 'react';
 
@@ -45,15 +45,11 @@ const AllLaptop = async () => {
                     {
                         appleLaptop.map(appleLaptops => <AppleLaptopCard key={appleLaptops.id} appleLaptops={appleLaptops}></AppleLaptopCard>)
                     }
-                    {
-                        asusLaptop.map(asuslaptops => <AsusLaptopCard key={asuslaptops.id} asuslaptops={asuslaptops}></AsusLaptopCard>)
-                    }
+                  
                     {
                         hpLaptop.map(hpLaptops => <HpLaptopCard key={hpLaptops.id} hpLaptops={hpLaptops}></HpLaptopCard>)
                     }
-                      {
-                        huaweiLaptop.map(huaweislaptops => <HuaweiLaptopCard key={huaweislaptops.id} huaweislaptops={huaweislaptops}></HuaweiLaptopCard>)
-                    }
+                     
                 </div>
             </div>
         </div>

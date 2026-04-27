@@ -1,5 +1,5 @@
 import MouseCard from '@/Components/AllCards/gadgetCard/MouseCard';
-import MouseDrop from '@/Components/DropDownInner/gadgetDrop/MouseDrop';
+
 import { House } from '@gravity-ui/icons';
 import { Button } from '@heroui/react';
 import React from 'react';
@@ -29,7 +29,7 @@ const Mousepage = async() => {
                     <h3>Products of Mouse</h3>
                 </div>
 
-              <MouseDrop></MouseDrop>
+          
 
             </div>
 
