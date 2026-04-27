@@ -1,5 +1,6 @@
 Project: Jazzdle E-commerce Shop (Next.js App):
-Live link: https://mobile-shop-five-psi.vercel.app/
+Live link: https://mobile-shop-five-psi.vercel.app
+
 Today I worked on my Jazzdle E-commerce Shop project using Next.js.
 Features I implemented:
 Authentication
@@ -13,7 +14,9 @@ Added Dark / Light theme switch button in the Navbar
 Used HeroUI theme system
 Added Fast Marquee animation
 Added React Spinner loader
+
 Cart System:
+
 Used Next.js Proxy condition
 If the user is logged in → Cart section is visible
 If the user is not logged in → Cart section is hidden
@@ -22,6 +25,7 @@ Increase quantity → Total price increases
 Decrease quantity → Total price decreases
 Checkout button → clears all cart items
 Cart data is saved in Local Storage
+
 Technologies Used:
 Next.js
 Tailwind CSS
@@ -32,3 +36,4 @@ Gravity Icons
 React Hook Form
 React Fast Marquee
 React Spinner
+React toastify
